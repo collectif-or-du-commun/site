@@ -16,17 +16,6 @@ interface NavDropdown {
 
 const navDropdowns: NavDropdown[] = [
   {
-    label: "Nos espaces",
-    items: [
-      { label: "Nous vous accueillons", href: "/espaces" },
-      { label: "Before-Week", href: "/espaces/before-week" },
-      { label: "Guichet Ouvert", href: "/espaces/guichet-ouvert" },
-      { label: "Nos locaux", href: "/espaces/nos-locaux" },
-      { label: "Location de salles", href: "/location-salles" },
-      { label: "Agenda", href: "/agenda" },
-    ],
-  },
-  {
     label: "Formations",
     items: [
       { label: "Toutes les formations", href: "/formations" },
@@ -35,15 +24,30 @@ const navDropdowns: NavDropdown[] = [
       { label: "L'Campus", href: "/formations/lcampus" },
       { label: "S'entrApprendre", href: "/formations/sentrapprendre" },
       { label: "Coup de pouce", href: "/formations/coup-de-pouce" },
-      { label: "Ateliers adherents", href: "/formations/ateliers-adherents" },
+      { label: "Ateliers adhérents", href: "/formations/ateliers-adherents" },
     ],
   },
   {
     label: "Prestations",
     items: [
       { label: "Toutes nos prestations", href: "/prestations" },
-      { label: "La Fresque des Energies", href: "/prestations/fresque-energies" },
-      { label: "Voyage d'un heros", href: "/prestations/voyage-heros" },
+      { label: "La Fresque des Énergies", href: "/prestations/fresque-energies" },
+      { label: "Voyage d'un héros", href: "/prestations/voyage-heros" },
+    ],
+  },
+  {
+    label: "Nos espaces",
+    items: [
+      { label: "Découvrir l'ODC", href: "/espaces" },
+      { label: "Nos locaux", href: "/espaces/nos-locaux" },
+      { label: "Location de salles", href: "/location-salles" },
+    ],
+  },
+  {
+    label: "Nos programmes",
+    items: [
+      { label: "Before-Week", href: "/espaces/before-week" },
+      { label: "Guichet Ouvert", href: "/espaces/guichet-ouvert" },
     ],
   },
 ];
@@ -142,13 +146,13 @@ export function Navbar() {
             </div>
           ))}
 
-            {/* Location de salles — lien direct */}
+            {/* Agenda — lien direct */}
           <Link
-            href="/location-salles"
+            href="/agenda"
             onClick={closeAll}
             className="rounded-lg px-3 py-2 text-sm font-medium text-white transition-colors hover:text-or"
           >
-            Location de salles
+            Agenda
           </Link>
 
           {/* CTA */}
@@ -237,14 +241,14 @@ export function Navbar() {
                 </div>
               ))}
 
-              {/* Location de salles — lien direct mobile */}
+              {/* Agenda — lien direct mobile */}
               <div className="border-b border-white/10">
                 <Link
-                  href="/location-salles"
+                  href="/agenda"
                   onClick={closeMobile}
                   className="block py-4 text-sm font-medium text-white transition-colors hover:text-or"
                 >
-                  Location de salles
+                  Agenda
                 </Link>
               </div>
 
