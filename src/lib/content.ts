@@ -9,8 +9,8 @@ export const MARQUEE_ITEMS = [
   "🎓 Certifié Qualiopi · Financement CPF et Pôle Emploi possible",
   "🗓 Before-Week : tous les lundis 9h–11h, accès libre et gratuit",
   "🌟 ORizon LAB · 20-28 ans · Prochaine session nov-déc 2026",
-  "📍 5 rue Sainte-Marie, Andolsheim — à 10 min de Colmar",
-  "📞 07 55 53 08 57 · formation@collectiforducommun.org",
+  "📍 4 Grand'Rue, 68280 Andolsheim — à 10 min de Colmar",
+  "📞 06 70 89 30 07 · contact@collectiforducommun.org",
 ];
 
 export type EventCategory = "before-week" | "formation" | "evenement" | "atelier";
@@ -33,7 +33,7 @@ export const EVENTS: Event[] = [
     title: "Before-Week — Avril 2026",
     date: "2026-04-07",
     time: "9h–11h",
-    location: "12 rue de la Forge, Andolsheim",
+    location: "4 Grand'Rue, 68280 Andolsheim",
     category: "before-week",
     description: "Chaque lundi de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Accès libre, sans inscription.",
   },
@@ -64,7 +64,7 @@ export const EVENTS: Event[] = [
     title: "Before-Week — Mai 2026",
     date: "2026-05-05",
     time: "9h–11h",
-    location: "12 rue de la Forge, Andolsheim",
+    location: "4 Grand'Rue, 68280 Andolsheim",
     category: "before-week",
     description: "Chaque lundi de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Accès libre, sans inscription.",
   },
