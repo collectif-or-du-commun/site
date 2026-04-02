@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Ateliers adhérents",
   description:
     "Ateliers pratiques animes par et pour les membres du Collectif Or du Commun.",
+  alternates: {
+    canonical: "/formations/ateliers-adherents",
+  },
 };
 
 const formats = [

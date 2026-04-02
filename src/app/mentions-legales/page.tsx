@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description: "Mentions légales du Collectif Or du Commun, tiers-lieu associatif à Andolsheim (Haut-Rhin).",
+  alternates: {
+    canonical: "/mentions-legales",
+  },
 };
 
 export default function MentionsLegalesPage() {

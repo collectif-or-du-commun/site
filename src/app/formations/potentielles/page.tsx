@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Les Potenti'Elles — Formation femmes en transition",
   description:
     "Formation de 6 semaines (150h + 35h immersion) pour femmes en transition professionnelle. 6 participantes max. 385€ TTC reste à charge. Certifié Qualiopi. Andolsheim.",
+  alternates: {
+    canonical: "/formations/potentielles",
+  },
 };
 
 const pilliers = [

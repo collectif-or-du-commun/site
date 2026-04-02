@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "L'Campus — Leadership au féminin",
   description:
     "Programme de développement du leadership pour femmes entrepreneures. 7 master-classes, mentorat individuel, équicoaching. 600€. Andolsheim.",
+  alternates: {
+    canonical: "/formations/lcampus",
+  },
 };
 
 

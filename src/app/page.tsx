@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/home/hero";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 import { MarqueeBand } from "@/components/home/marquee-band";
 import { StatsSection } from "@/components/home/stats-section";
 import { ADNSection } from "@/components/home/adn-section";

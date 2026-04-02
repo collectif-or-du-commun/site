@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "S'entrApprendre — Formation formateurs-entrepreneurs",
   description:
     "Devenez formateur-entrepreneur : 92h de formation d'octobre 2026 à février 2027. Pour consultants, coaches et experts. 3 800€ à 5 200€. Financement DEFFINO possible.",
+  alternates: {
+    canonical: "/formations/sentrapprendre",
+  },
 };
 
 

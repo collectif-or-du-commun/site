@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Voyage d'un héros",
   description:
     "Accompagnement narratif pour explorer son parcours professionnel et identifier ses prochaines étapes. À Andolsheim, Alsace.",
+  alternates: {
+    canonical: "/prestations/voyage-heros",
+  },
 };
 
 const infoRows = [

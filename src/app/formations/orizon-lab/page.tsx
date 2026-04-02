@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "ORizon LAB — Orientation professionnelle 20-28 ans",
   description:
     "Programme d'accompagnement de 7 semaines pour les jeunes de 20 à 28 ans. Connaissance de soi, exploration métiers, immersion entreprise. 100€ reste à charge.",
+  alternates: {
+    canonical: "/formations/orizon-lab",
+  },
 };
 
 const modules = [

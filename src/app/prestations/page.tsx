@@ -5,7 +5,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Nos prestations",
   description:
-    "Ateliers et prestations du Collectif Or du Commun : Fresque des Énergies, Voyage d'un héros. À Andolsheim, Alsace.",
+    "Ateliers et accompagnements du Collectif Or du Commun : Fresque des Énergies (3h, 6-25 personnes) et Voyage d'un héros (demi-journée). Andolsheim, Alsace.",
+  alternates: {
+    canonical: "/prestations",
+  },
 };
 
 export default function PrestationsPage() {
@@ -25,9 +28,12 @@ export default function PrestationsPage() {
 
       {/* Intro */}
       <section className="bg-white py-20">
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto px-6">
           <p className="text-gris text-lg text-center leading-relaxed">
             Nous proposons des interventions sur mesure pour les organisations, les équipes et les collectivités qui souhaitent explorer les transitions professionnelles, énergétiques et humaines.
+          </p>
+          <p className="text-gris mt-4 text-base text-center leading-relaxed">
+            Nos prestations se déroulent dans vos locaux ou à Andolsheim. Elles mobilisent des méthodes participatives éprouvées, adaptées à chaque contexte. Un entretien de cadrage préalable est systématiquement réalisé pour personnaliser l&apos;intervention.
           </p>
         </div>
       </section>
@@ -54,12 +60,16 @@ export default function PrestationsPage() {
                   La Fresque des Énergies
                 </h2>
                 <p className="text-gris text-sm mt-2 leading-relaxed">
-                  Un atelier collaboratif de 3h pour comprendre les enjeux énergétiques de manière ludique. Pour entreprises, associations, collectivités.
+                  Un atelier collaboratif de 3 heures pour comprendre les enjeux énergétiques de manière ludique et concrète. Les participants construisent ensemble une vision systémique de la production, de la consommation et des transitions énergétiques.
+                </p>
+                <p className="text-gris text-sm mt-2 leading-relaxed">
+                  Idéal pour sensibiliser les équipes aux enjeux de la transition énergétique sans jargon technique. La méthode, inspirée de la Fresque du Climat, favorise le dialogue et l&apos;engagement collectif. Aucun prérequis nécessaire.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">⏱ 3h</span>
-                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">👥 6-25 personnes</span>
-                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">📍 Andolsheim ou vos locaux</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">3 heures</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">6 à 25 personnes</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">Andolsheim ou vos locaux</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">Devis sur demande</span>
                 </div>
                 <Link
                   href="/prestations/fresque-energies"
@@ -85,15 +95,19 @@ export default function PrestationsPage() {
                   Accompagnement
                 </span>
                 <h2 className="font-playfair text-2xl text-bleu font-bold mt-3">
-                  Voyage d'un héros
+                  Voyage d&apos;un héros
                 </h2>
                 <p className="text-gris text-sm mt-2 leading-relaxed">
-                  Un accompagnement narratif et transformateur pour explorer son parcours professionnel et identifier ses prochaines étapes avec clarté.
+                  Un accompagnement narratif et transformateur inspiré du monomythe de Joseph Campbell. En demi-journée, chaque participant explore son parcours professionnel comme une histoire, identifie ses ressources et clarifie ses prochaines étapes.
+                </p>
+                <p className="text-gris text-sm mt-2 leading-relaxed">
+                  Utilisé pour les bilans de compétences, les transitions professionnelles et les moments de réorientation. Peut se décliner en format individuel ou en groupe restreint (6 personnes maximum).
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">📅 Demi-journée</span>
-                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">👤 Individuel ou groupe</span>
-                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">🎯 Transition pro</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">Demi-journée</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">Individuel ou groupe (6 max)</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">Transition professionnelle</span>
+                  <span className="bg-fond text-gris text-xs px-3 py-1.5 rounded-full">Devis sur demande</span>
                 </div>
                 <Link
                   href="/prestations/voyage-heros"
@@ -107,12 +121,45 @@ export default function PrestationsPage() {
         </div>
       </section>
 
+      {/* Pour qui */}
+      <section className="bg-white py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="font-playfair text-3xl font-bold text-bleu text-center mb-8">
+            Pour qui sont ces prestations ?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Entreprises et PME",
+                desc: "Sensibilisation des équipes aux transitions, team building et cohésion autour d'enjeux communs.",
+              },
+              {
+                title: "Associations et collectivités",
+                desc: "Ateliers de sensibilisation ouverts au grand public ou réservés aux bénévoles et agents.",
+              },
+              {
+                title: "Particuliers en transition",
+                desc: "Accompagnement individuel ou en petit groupe pour clarifier un projet de reconversion professionnelle.",
+              },
+            ].map(({ title, desc }) => (
+              <div key={title} className="rounded-2xl bg-fond border border-gray-100 p-6">
+                <h3 className="font-semibold text-bleu-dark mb-2">{title}</h3>
+                <p className="text-sm text-gris leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-or py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-playfair text-2xl md:text-3xl text-bleu-dark font-bold mb-6">
+          <h2 className="font-playfair text-2xl md:text-3xl text-bleu-dark font-bold mb-4">
             Vous souhaitez une intervention sur mesure ?
           </h2>
+          <p className="text-bleu-dark/70 mb-8">
+            Décrivez-nous votre contexte et vos objectifs. Nous vous proposons un devis personnalisé sous 48h.
+          </p>
           <Link
             href="/contact"
             className="inline-block bg-bleu-dark text-white rounded-lg px-8 py-4 font-semibold hover:-translate-y-0.5 transition-all"

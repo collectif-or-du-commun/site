@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "La Fresque des Énergies",
   description:
     "Atelier collaboratif pour comprendre les enjeux énergétiques de manière ludique. Pour entreprises et associations à Andolsheim, Alsace.",
+  alternates: {
+    canonical: "/prestations/fresque-energies",
+  },
 };
 
 const infoRows = [

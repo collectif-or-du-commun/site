@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Le Before-Week",
   description:
     "Une semaine gratuite pour découvrir le coworking et rencontrer la communauté du Collectif Or du Commun à Andolsheim.",
+  alternates: {
+    canonical: "/espaces/before-week",
+  },
 };
 
 const steps = [

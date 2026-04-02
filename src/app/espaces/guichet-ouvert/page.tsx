@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Guichet Ouvert",
   description:
     "Service d'accompagnement gratuit pour les porteurs de projets et createurs d'entreprise.",
+  alternates: {
+    canonical: "/espaces/guichet-ouvert",
+  },
 };
 
 const checkItems = [

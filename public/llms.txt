@@ -41,7 +41,7 @@ Before Week, soirées conférences, ateliers thématiques, moments conviviaux. L
 - [Accueil](https://odc.vjacquet.fr/) : Présentation du tiers-lieu et des services
 - [Espaces](https://odc.vjacquet.fr/espaces) : Coworking, salles, espaces communs
 - [Formations](https://odc.vjacquet.fr/formations) : Programmes certifiés Qualiopi
-- [Location de salles](https://odc.vjacquet.fr/espaces/location-salles) : Tarifs et disponibilités
+- [Location de salles](https://odc.vjacquet.fr/location-salles) : Tarifs et disponibilités
 - [Before Week](https://odc.vjacquet.fr/espaces/before-week) : Événement annuel
 - [Agenda](https://odc.vjacquet.fr/agenda) : Événements à venir
 - [Contact](https://odc.vjacquet.fr/contact) : Formulaire et coordonnées

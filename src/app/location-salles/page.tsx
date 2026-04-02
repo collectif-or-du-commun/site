@@ -14,9 +14,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Location de salles — Collectif Or du Commun",
+  title: "Location de salles",
   description:
     "Louez nos salles à Andolsheim : salle de réunion (8 pers), grande salle (20 pers), espace coworking. Équipé, parking gratuit, à 10 min de Colmar.",
+  alternates: {
+    canonical: "/location-salles",
+  },
 };
 
 // ─── Tarifs issus du flyer officiel 2026 ────────────────────────────────────

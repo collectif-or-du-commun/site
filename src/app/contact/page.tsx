@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Nous contacter",
   description:
     "Contactez le Collectif Or du Commun pour visiter nos espaces, vous inscrire à une formation ou en savoir plus.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

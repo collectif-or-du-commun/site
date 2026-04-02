@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Nos locaux",
   description:
     "Découvrez les espaces du Collectif Or du Commun à Andolsheim : coworking, salles de formation, espace commun et jardin.",
+  alternates: {
+    canonical: "/espaces/nos-locaux",
+  },
 };
 
 const salles = [
@@ -193,7 +196,7 @@ export default function NosLocauxPage() {
                 <ul className="text-gris space-y-1 text-sm">
                   <li className="flex justify-between max-w-xs">
                     <span>Lundi – Vendredi</span>
-                    <span className="font-medium text-bleu">9h – 18h</span>
+                    <span className="font-medium text-bleu">8h – 18h</span>
                   </li>
                   <li className="flex justify-between max-w-xs">
                     <span>Samedi</span>

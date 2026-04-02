@@ -1,26 +1,19 @@
 "use client";
 
-import { useState } from "react";
-import { MapPin, Clock, Mail, Phone, CheckCircle } from "lucide-react";
+import { useActionState } from "react";
+import { MapPin, Clock, Mail, Phone, CheckCircle, AlertCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { sendContactEmail, type ContactFormState } from "./actions";
 
 const INPUT_CLASS =
   "rounded-xl border border-gray-200 px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-or/50 focus:border-or transition bg-white text-bleu-dark placeholder:text-gray-400";
 
 const LABEL_CLASS = "block text-sm font-medium text-bleu-dark mb-1";
 
-export function ContactClient() {
-  const [nom, setNom] = useState("");
-  const [email, setEmail] = useState("");
-  const [telephone, setTelephone] = useState("");
-  const [sujet, setSujet] = useState("");
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+const initialState: ContactFormState = { success: false };
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setSubmitted(true);
-  }
+export function ContactClient() {
+  const [state, formAction, pending] = useActionState(sendContactEmail, initialState);
 
   return (
     <>
@@ -41,7 +34,7 @@ export function ContactClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Une question, une visite, une inscription&nbsp;? On est la.
+            Une question, une visite, une inscription ? On est là.
           </motion.p>
         </div>
       </section>
@@ -59,7 +52,7 @@ export function ContactClient() {
           </h2>
 
           <AnimatePresence mode="wait">
-            {submitted ? (
+            {state.success ? (
               <motion.div
                 key="success"
                 className="flex items-center gap-3 rounded-2xl bg-green-50 border border-green-200 px-6 py-5 text-green-700"
@@ -70,18 +63,25 @@ export function ContactClient() {
               >
                 <CheckCircle className="w-6 h-6 shrink-0" />
                 <span className="font-medium">
-                  Merci&nbsp;! Nous vous repondrons sous 24h.
+                  Merci ! Nous vous répondrons sous 24h.
                 </span>
               </motion.div>
             ) : (
               <motion.form
                 key="form"
-                onSubmit={handleSubmit}
+                action={formAction}
                 className="space-y-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               >
+                {state.error && (
+                  <div className="flex items-center gap-3 rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-red-700 text-sm">
+                    <AlertCircle className="w-5 h-5 shrink-0" />
+                    {state.error}
+                  </div>
+                )}
+
                 {/* Nom */}
                 <div>
                   <label htmlFor="nom" className={LABEL_CLASS}>
@@ -89,10 +89,9 @@ export function ContactClient() {
                   </label>
                   <input
                     id="nom"
+                    name="nom"
                     type="text"
                     required
-                    value={nom}
-                    onChange={(e) => setNom(e.target.value)}
                     placeholder="Marie Dupont"
                     className={INPUT_CLASS}
                   />
@@ -105,10 +104,9 @@ export function ContactClient() {
                   </label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
                     required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="marie@exemple.fr"
                     className={INPUT_CLASS}
                   />
@@ -117,14 +115,13 @@ export function ContactClient() {
                 {/* Téléphone */}
                 <div>
                   <label htmlFor="telephone" className={LABEL_CLASS}>
-                    Telephone{" "}
+                    Téléphone{" "}
                     <span className="text-gray-400 font-normal">(optionnel)</span>
                   </label>
                   <input
                     id="telephone"
+                    name="telephone"
                     type="tel"
-                    value={telephone}
-                    onChange={(e) => setTelephone(e.target.value)}
                     placeholder="06 12 34 56 78"
                     className={INPUT_CLASS}
                   />
@@ -137,19 +134,19 @@ export function ContactClient() {
                   </label>
                   <select
                     id="sujet"
+                    name="sujet"
                     required
-                    value={sujet}
-                    onChange={(e) => setSujet(e.target.value)}
+                    defaultValue=""
                     className={INPUT_CLASS}
                   >
                     <option value="" disabled>
                       Choisissez un sujet
                     </option>
-                    <option value="visite">Visiter les espaces</option>
-                    <option value="formation">S'inscrire a une formation</option>
-                    <option value="location">Location de salle</option>
-                    <option value="adhesion">Adhesion au Collectif</option>
-                    <option value="autre">Autre</option>
+                    <option value="Visiter les espaces">Visiter les espaces</option>
+                    <option value="S'inscrire à une formation">S&apos;inscrire à une formation</option>
+                    <option value="Location de salle">Location de salle</option>
+                    <option value="Adhésion au Collectif">Adhésion au Collectif</option>
+                    <option value="Autre">Autre</option>
                   </select>
                 </div>
 
@@ -160,10 +157,9 @@ export function ContactClient() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     required
                     rows={5}
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
                     placeholder="Dites-nous en plus..."
                     className={INPUT_CLASS}
                   />
@@ -171,16 +167,17 @@ export function ContactClient() {
 
                 <button
                   type="submit"
-                  className="w-full bg-or text-bleu-dark rounded-xl py-3.5 font-semibold hover:-translate-y-0.5 transition-all hover:shadow-[0_8px_30px_rgba(255,202,0,0.4)]"
+                  disabled={pending}
+                  className="w-full bg-or text-bleu-dark rounded-xl py-3.5 font-semibold hover:-translate-y-0.5 transition-all hover:shadow-[0_8px_30px_rgba(255,202,0,0.4)] disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0"
                 >
-                  Envoyer le message
+                  {pending ? "Envoi en cours…" : "Envoyer le message"}
                 </button>
               </motion.form>
             )}
           </AnimatePresence>
         </motion.div>
 
-        {/* Right — Info pratiques */}
+        {/* Right — Infos pratiques */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -197,7 +194,7 @@ export function ContactClient() {
               <div>
                 <p className="font-medium text-bleu-dark text-sm">Adresse</p>
                 <p className="text-gris text-sm mt-0.5">
-                  4 Grand'Rue, 68280 Andolsheim (Haut-Rhin)
+                  4 Grand&apos;Rue, 68280 Andolsheim (Haut-Rhin)
                 </p>
               </div>
             </div>
@@ -207,7 +204,7 @@ export function ContactClient() {
               <div>
                 <p className="font-medium text-bleu-dark text-sm">Horaires</p>
                 <p className="text-gris text-sm mt-0.5">
-                  Lun&ndash;Ven&nbsp;: 8h&ndash;18h &middot; Sam&ndash;Dim&nbsp;: fermé
+                  Lun&ndash;Ven : 8h&ndash;18h &middot; Sam&ndash;Dim : fermé
                 </p>
               </div>
             </div>
@@ -228,7 +225,7 @@ export function ContactClient() {
             <div className="rounded-2xl bg-fond p-5 flex gap-4 items-start">
               <Phone className="w-5 h-5 text-or shrink-0 mt-0.5" />
               <div>
-                <p className="font-medium text-bleu-dark text-sm">Telephone</p>
+                <p className="font-medium text-bleu-dark text-sm">Téléphone</p>
                 <a
                   href="tel:+33755530857"
                   className="text-gris text-sm mt-0.5 hover:text-bleu transition-colors block"

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Coup de pouce",
   description:
     "Accompagnement individualisé pour les porteurs de projets fragiles à Andolsheim, Alsace. Soutien humain et bienveillant.",
+  alternates: {
+    canonical: "/formations/coup-de-pouce",
+  },
 };
 
 const aspects = [

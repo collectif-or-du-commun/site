@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "EducationalOrganization"],
   "name": "Collectif Or du Commun",
   "description": "Tiers-lieu associatif à Andolsheim (68). Coworking, formations, événements et accompagnement pour entrepreneurs et indépendants en Alsace.",
   "url": "https://odc.vjacquet.fr",
