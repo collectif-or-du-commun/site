@@ -14,7 +14,7 @@ export function LocationSection() {
             <div className="flex flex-col gap-4 mb-8">
               <div className="flex items-start gap-3 text-gris text-sm">
                 <MapPin className="h-5 w-5 text-bleu mt-0.5 shrink-0" />
-                <span>12 rue de la Forge, 68600 Andolsheim (Haut-Rhin)</span>
+                <span>4 Grand'Rue, 68280 Andolsheim (Haut-Rhin)</span>
               </div>
               <div className="flex items-start gap-3 text-gris text-sm">
                 <Car className="h-5 w-5 text-bleu mt-0.5 shrink-0" />
@@ -22,7 +22,7 @@ export function LocationSection() {
               </div>
               <div className="flex items-start gap-3 text-gris text-sm">
                 <Clock className="h-5 w-5 text-bleu mt-0.5 shrink-0" />
-                <span>Lun–Ven : 8h–19h · Sam : sur rendez-vous</span>
+                <span>Lun–Ven : 8h–18h · Sam–Dim : fermé</span>
               </div>
             </div>
             <Link

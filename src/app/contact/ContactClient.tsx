@@ -197,7 +197,7 @@ export function ContactClient() {
               <div>
                 <p className="font-medium text-bleu-dark text-sm">Adresse</p>
                 <p className="text-gris text-sm mt-0.5">
-                  12 rue de la Forge, 68600 Andolsheim (Haut-Rhin)
+                  4 Grand'Rue, 68280 Andolsheim (Haut-Rhin)
                 </p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export function ContactClient() {
               <div>
                 <p className="font-medium text-bleu-dark text-sm">Horaires</p>
                 <p className="text-gris text-sm mt-0.5">
-                  Lun&ndash;Ven&nbsp;: 8h&ndash;19h &middot; Sam&nbsp;: sur rendez-vous
+                  Lun&ndash;Ven&nbsp;: 8h&ndash;18h &middot; Sam&ndash;Dim&nbsp;: fermé
                 </p>
               </div>
             </div>
@@ -230,10 +230,10 @@ export function ContactClient() {
               <div>
                 <p className="font-medium text-bleu-dark text-sm">Telephone</p>
                 <a
-                  href="tel:+33389000000"
+                  href="tel:+33670893007"
                   className="text-gris text-sm mt-0.5 hover:text-bleu transition-colors block"
                 >
-                  03 89 XX XX XX
+                  06 70 89 30 07
                 </a>
               </div>
             </div>
@@ -242,7 +242,7 @@ export function ContactClient() {
           {/* Google Maps embed */}
           <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.0!2d7.378!3d48.042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47917b1f7e7b4b1f%3A0x1!2s12+Rue+de+la+Forge%2C+68600+Andolsheim!5e0!3m2!1sfr!2sfr!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.0!2d7.3776!3d48.0418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47916e2e3b3f4e89%3A0xc5a6b7d8e9f01234!2s4+Grand'Rue%2C+68280+Andolsheim!5e0!3m2!1sfr!2sfr!4v1700000000000"
               width="100%"
               height="300"
               style={{ border: 0 }}
