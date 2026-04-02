@@ -18,10 +18,10 @@ export function ContactClient() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-bleu-dark py-20">
+      <section className="bg-fond py-20">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <motion.h1
-            className="font-playfair text-4xl md:text-5xl text-white mb-4"
+            className="font-playfair text-4xl md:text-5xl text-bleu mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ export function ContactClient() {
             Nous contacter
           </motion.h1>
           <motion.p
-            className="text-white/70 text-lg max-w-xl mx-auto"
+            className="text-gris text-lg max-w-xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -40,7 +40,7 @@ export function ContactClient() {
       </section>
 
       {/* Content */}
-      <section className="max-w-[1200px] mx-auto px-6 py-16 grid lg:grid-cols-2 gap-16">
+      <section className="bg-white max-w-[1200px] mx-auto px-6 py-16 grid lg:grid-cols-2 gap-16">
         {/* Left — Form */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
