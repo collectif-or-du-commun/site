@@ -27,16 +27,45 @@ export interface Event {
   spots?: number; // places disponibles, laisser vide si illimité
 }
 
-export const EVENTS: Event[] = [
-  {
-    id: "before-week-2026-04",
-    title: "Before-Week — Avril 2026",
-    date: "2026-04-07",
-    time: "9h–11h",
-    location: "4 Grand'Rue, 68280 Andolsheim",
-    category: "before-week",
-    description: "Chaque lundi de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Accès libre, sans inscription.",
-  },
+const MONTHS_FR = [
+  "janvier","février","mars","avril","mai","juin",
+  "juillet","août","septembre","octobre","novembre","décembre",
+];
+
+// Génère les Before-Week automatiquement depuis aujourd'hui
+export function generateBeforeWeekEvents(count = 10): Event[] {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const cursor = new Date(today);
+  const dow = cursor.getDay(); // 0=dim, 1=lun...
+  if (dow !== 1) {
+    cursor.setDate(cursor.getDate() + (dow === 0 ? 1 : 8 - dow));
+  }
+
+  const events: Event[] = [];
+  for (let i = 0; i < count; i++) {
+    const y = cursor.getFullYear();
+    const m = String(cursor.getMonth() + 1).padStart(2, "0");
+    const d = String(cursor.getDate()).padStart(2, "0");
+    const dateStr = `${y}-${m}-${d}`;
+    const label = `${cursor.getDate()} ${MONTHS_FR[cursor.getMonth()]}`;
+    events.push({
+      id: `before-week-${dateStr}`,
+      title: `Before-Week — ${label}`,
+      date: dateStr,
+      time: "9h–11h",
+      location: "4 Grand'Rue, 68280 Andolsheim",
+      category: "before-week",
+      description: "Chaque lundi de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Accès libre, sans inscription.",
+    });
+    cursor.setDate(cursor.getDate() + 7);
+  }
+  return events;
+}
+
+// Événements statiques (hors Before-Week)
+const STATIC_EVENTS: Event[] = [
   {
     id: "potentielles-2026-04",
     title: "Les Potenti'Elles — Session de printemps",
@@ -60,15 +89,6 @@ export const EVENTS: Event[] = [
     spots: 15,
   },
   {
-    id: "before-week-2026-05",
-    title: "Before-Week — Mai 2026",
-    date: "2026-05-05",
-    time: "9h–11h",
-    location: "4 Grand'Rue, 68280 Andolsheim",
-    category: "before-week",
-    description: "Chaque lundi de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Accès libre, sans inscription.",
-  },
-  {
     id: "orizon-lab-info-2026-05",
     title: "ORizon LAB — Réunion d'info",
     date: "2026-05-12",
@@ -90,6 +110,16 @@ export const EVENTS: Event[] = [
     spots: 100,
   },
 ];
+
+// Exporte EVENTS pour compatibilité (= statiques seuls, sans Before-Week)
+export const EVENTS = STATIC_EVENTS;
+
+// Fusion statiques + Before-Week auto, triés par date
+export function getAllEvents(): Event[] {
+  return [...STATIC_EVENTS, ...generateBeforeWeekEvents(10)].sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+  );
+}
 
 // Helpers
 export function formatDate(dateStr: string): string {

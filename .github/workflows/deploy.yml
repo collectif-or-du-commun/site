@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Redéploiement automatique chaque lundi à 5h UTC (6h ou 7h heure française)
+    # Génère les nouvelles dates Before-Week à jour
+    - cron: '0 5 * * 1'
 
 jobs:
   deploy:

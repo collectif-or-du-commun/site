@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { Calendar, MapPin } from "lucide-react";
+import { useState, useMemo } from "react";
+import { Calendar, MapPin, Clock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import {
-  EVENTS,
+  getAllEvents,
   formatDate,
   CATEGORY_LABELS,
   CATEGORY_COLORS,
@@ -29,13 +29,54 @@ const STRIP_COLOR: Record<EventCategory, string> = {
   atelier: "bg-orange",
 };
 
-export function AgendaClient() {
-  const [activeCategory, setActiveCategory] = useState<FilterCategory>("tous");
+const MONTHS_FR: Record<string, string> = {
+  "01": "Janv.", "02": "Févr.", "03": "Mars", "04": "Avr.",
+  "05": "Mai",   "06": "Juin",  "07": "Juil.", "08": "Août",
+  "09": "Sept.", "10": "Oct.",  "11": "Nov.",  "12": "Déc.",
+};
 
-  const filtered =
-    activeCategory === "tous"
-      ? EVENTS
-      : EVENTS.filter((e) => e.category === activeCategory);
+export function AgendaClient() {
+  const allEvents = useMemo(() => getAllEvents(), []);
+  const [activeCategory, setActiveCategory] = useState<FilterCategory>("tous");
+  // "all" | "15j" | "YYYY-MM"
+  const [timePeriod, setTimePeriod] = useState<string>("all");
+
+  // Mois disponibles parmi tous les évènements (indépendant du filtre catégorie)
+  const availableMonths = useMemo(() => {
+    const set = new Set(allEvents.map((e) => e.date.slice(0, 7)));
+    return [...set].sort();
+  }, [allEvents]);
+
+  const filtered = useMemo(() => {
+    let result = allEvents;
+
+    if (activeCategory !== "tous") {
+      result = result.filter((e) => e.category === activeCategory);
+    }
+
+    if (timePeriod === "15j") {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const limit = new Date(today);
+      limit.setDate(limit.getDate() + 15);
+      result = result.filter((e) => {
+        const d = new Date(e.date);
+        return d >= today && d <= limit;
+      });
+    } else if (timePeriod !== "all") {
+      result = result.filter((e) => e.date.startsWith(timePeriod));
+    }
+
+    return result;
+  }, [allEvents, activeCategory, timePeriod]);
+
+  function pillClass(active: boolean) {
+    return `rounded-full px-4 py-2 text-sm font-medium transition-all whitespace-nowrap ${
+      active
+        ? "bg-or text-bleu-dark shadow-sm"
+        : "bg-white text-bleu border border-gray-200 hover:border-or"
+    }`;
+  }
 
   return (
     <>
@@ -56,32 +97,64 @@ export function AgendaClient() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Decouvrez nos prochains rendez-vous
+            Découvrez nos prochains rendez-vous
           </motion.p>
         </div>
       </section>
 
-      {/* Filter tabs */}
-      <div className="max-w-[1200px] mx-auto px-6 py-8">
+      {/* Filtres */}
+      <div className="max-w-[1200px] mx-auto px-6 pt-8 pb-4 space-y-3">
+        {/* Ligne 1 — Catégories */}
         <div className="flex flex-wrap gap-2">
           {ALL_CATEGORIES.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`rounded-full px-5 py-2 text-sm font-medium transition-all ${
-                activeCategory === cat
-                  ? "bg-or text-bleu-dark shadow-sm"
-                  : "bg-white text-bleu border border-gray-200 hover:border-or"
-              }`}
+              className={pillClass(activeCategory === cat)}
             >
-              {cat === "tous" ? "Tous" : CATEGORY_LABELS[cat as EventCategory]}
+              {cat === "tous" ? "Toutes catégories" : CATEGORY_LABELS[cat as EventCategory]}
             </button>
           ))}
         </div>
+
+        {/* Ligne 2 — Période */}
+        <div className="flex flex-wrap gap-2 items-center">
+          <button
+            onClick={() => setTimePeriod("all")}
+            className={pillClass(timePeriod === "all")}
+          >
+            Tout l&apos;agenda
+          </button>
+          <button
+            onClick={() => setTimePeriod("15j")}
+            className={`${pillClass(timePeriod === "15j")} flex items-center gap-1.5`}
+          >
+            <Clock size={13} />
+            15 prochains jours
+          </button>
+
+          {/* Séparateur */}
+          <span className="text-gray-300 text-lg leading-none select-none">|</span>
+
+          {/* Pills par mois */}
+          {availableMonths.map((ym) => {
+            const [year, month] = ym.split("-");
+            const label = `${MONTHS_FR[month]} ${year}`;
+            return (
+              <button
+                key={ym}
+                onClick={() => setTimePeriod(ym)}
+                className={pillClass(timePeriod === ym)}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      {/* Events grid */}
-      <div className="max-w-[1200px] mx-auto px-6 pb-16">
+      {/* Grille d'événements */}
+      <div className="max-w-[1200px] mx-auto px-6 pb-16 pt-4">
         <AnimatePresence mode="wait">
           {filtered.length === 0 ? (
             <motion.p
@@ -91,11 +164,11 @@ export function AgendaClient() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              Aucun evenement dans cette categorie pour le moment.
+              Aucun événement pour cette sélection.
             </motion.p>
           ) : (
             <motion.div
-              key={activeCategory}
+              key={`${activeCategory}-${timePeriod}`}
               className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -110,24 +183,17 @@ export function AgendaClient() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: i * 0.05 }}
                 >
-                  {/* Top colored strip */}
                   <div className={`h-1 w-full ${STRIP_COLOR[event.category]}`} />
 
-                  {/* Card body */}
                   <div className="p-6 flex flex-col flex-1">
-                    {/* Category badge */}
-                    <span
-                      className={`inline-block rounded-full px-3 py-1 text-xs font-semibold w-fit ${CATEGORY_COLORS[event.category]}`}
-                    >
+                    <span className={`inline-block rounded-full px-3 py-1 text-xs font-semibold w-fit ${CATEGORY_COLORS[event.category]}`}>
                       {CATEGORY_LABELS[event.category]}
                     </span>
 
-                    {/* Title */}
                     <h3 className="font-playfair font-bold text-xl text-bleu mt-2 leading-snug">
                       {event.title}
                     </h3>
 
-                    {/* Date + time */}
                     <div className="flex items-start gap-2 mt-3 text-sm text-bleu-dark">
                       <Calendar className="w-4 h-4 text-or shrink-0 mt-0.5" />
                       <span>
@@ -138,18 +204,15 @@ export function AgendaClient() {
                       </span>
                     </div>
 
-                    {/* Location */}
                     <div className="flex items-start gap-2 mt-2 text-sm text-gris">
                       <MapPin className="w-4 h-4 text-gris shrink-0 mt-0.5" />
                       <span>{event.location}</span>
                     </div>
 
-                    {/* Description */}
                     <p className="text-gris text-sm mt-3 leading-relaxed flex-1">
                       {event.description}
                     </p>
 
-                    {/* Footer */}
                     <div className="mt-5 flex items-center justify-between gap-3 flex-wrap">
                       {event.spots != null ? (
                         <span className="rounded-full bg-orange/15 text-orange text-xs font-semibold px-3 py-1">
@@ -164,7 +227,7 @@ export function AgendaClient() {
                           href={event.registrationUrl}
                           className="bg-or text-bleu-dark rounded-lg px-5 py-2.5 text-sm font-semibold hover:-translate-y-0.5 transition-all whitespace-nowrap"
                         >
-                          S'inscrire &rarr;
+                          S&apos;inscrire &rarr;
                         </Link>
                       )}
                     </div>
