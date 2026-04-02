@@ -5,10 +5,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Nos prestations",
   description:
-    "Ateliers et prestations du Collectif Or du Commun : Fresque des Energies, Voyage d'un heros.",
+    "Ateliers et prestations du Collectif Or du Commun : Fresque des Énergies, Voyage d'un héros. À Andolsheim, Alsace.",
 };
-
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 export default function PrestationsPage() {
   return (
@@ -42,7 +40,7 @@ export default function PrestationsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
               <div className="relative h-56 w-full">
                 <Image
-                  src={`${IMAGE_BASE}odc-fresque-energies-1-scaled.jpg`}
+                  src="/images/atelier-couleurs.jpg"
                   alt="Atelier Fresque des Énergies"
                   fill
                   className="object-cover"
@@ -76,7 +74,7 @@ export default function PrestationsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
               <div className="relative h-56 w-full">
                 <Image
-                  src={`${IMAGE_BASE}odc-voyage-heros.jpg`}
+                  src="/images/coaching-trio.jpg"
                   alt="Accompagnement Voyage d'un héros"
                   fill
                   className="object-cover"

@@ -6,10 +6,8 @@ import { ArrowRight, Heart, Shield, Target } from "lucide-react";
 export const metadata: Metadata = {
   title: "Coup de pouce",
   description:
-    "Accompagnement individualise pour les porteurs de projets fragiles.",
+    "Accompagnement individualisé pour les porteurs de projets fragiles à Andolsheim, Alsace. Soutien humain et bienveillant.",
 };
-
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const aspects = [
   {
@@ -85,7 +83,7 @@ export default function CoupDePoucePage() {
             </div>
             <div>
               <Image
-                src={`${IMAGE_BASE}odc-coup-de-pouce-scaled.jpg`}
+                src="/images/formation-coaching.jpg"
                 alt="Accompagnement Coup de pouce"
                 width={500}
                 height={380}

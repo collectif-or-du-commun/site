@@ -15,12 +15,10 @@ import {
 import { SectionTitle } from "@/components/section-title";
 
 export const metadata: Metadata = {
-  title: "Nos Locaux",
+  title: "Nos locaux",
   description:
-    "Decouvrez les espaces du Collectif : coworking, salles de formation, espace commun.",
+    "Découvrez les espaces du Collectif Or du Commun à Andolsheim : coworking, salles de formation, espace commun et jardin.",
 };
-
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const salles = [
   {
@@ -74,7 +72,7 @@ export default function NosLocauxPage() {
           <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden">
             <div className="relative w-full h-full">
               <Image
-                src={`${IMAGE_BASE}odc-espace-coworking-discussion-scaled.jpg`}
+                src="/images/before-week-duo.jpg"
                 alt="Espace coworking"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -85,7 +83,7 @@ export default function NosLocauxPage() {
           <div className="rounded-2xl overflow-hidden">
             <div className="relative w-full h-full">
               <Image
-                src={`${IMAGE_BASE}odc-espace-commun-cafe.jpg`}
+                src="/images/cafe-commun.jpg"
                 alt="Espace commun"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -96,7 +94,7 @@ export default function NosLocauxPage() {
           <div className="rounded-2xl overflow-hidden">
             <div className="relative w-full h-full">
               <Image
-                src={`${IMAGE_BASE}odc-salle-formation.jpg`}
+                src="/images/atelier-jardinage.jpg"
                 alt="Salle de formation"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -107,7 +105,7 @@ export default function NosLocauxPage() {
           <div className="col-span-2 rounded-2xl overflow-hidden">
             <div className="relative w-full h-full">
               <Image
-                src={`${IMAGE_BASE}odc-evenement-communaute-scaled.jpg`}
+                src="/images/fete-communaute.jpg"
                 alt="Événement communauté"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"

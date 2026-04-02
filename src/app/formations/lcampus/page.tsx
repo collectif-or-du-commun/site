@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     "Programme de développement du leadership pour femmes entrepreneures. 7 master-classes, mentorat individuel, équicoaching. 600€. Andolsheim.",
 };
 
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const modules = [
   {
@@ -110,7 +109,7 @@ export default function LCampusPage() {
             </div>
             <div>
               <Image
-                src={`${IMAGE_BASE}odc-lcampus.jpg`}
+                src="/images/formation-binome.jpg"
                 alt="L'Campus — programme leadership au féminin"
                 width={500}
                 height={380}

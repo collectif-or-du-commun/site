@@ -3,12 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Voyage d'un heros",
+  title: "Voyage d'un héros",
   description:
-    "Accompagnement narratif pour explorer son parcours professionnel et identifier ses prochaines etapes.",
+    "Accompagnement narratif pour explorer son parcours professionnel et identifier ses prochaines étapes. À Andolsheim, Alsace.",
 };
-
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const infoRows = [
   { label: "Format", value: "Demi-journée" },
@@ -91,7 +89,7 @@ export default function VoyageHerosPage() {
           {/* Right: image */}
           <div className="relative w-full h-80 lg:h-[380px]">
             <Image
-              src={`${IMAGE_BASE}odc-voyage-heros.jpg`}
+              src="/images/coaching-trio.jpg"
               alt="Accompagnement Voyage d'un héros"
               fill
               className="object-cover rounded-2xl shadow-lg"

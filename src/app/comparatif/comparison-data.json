@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "dateAnalysis": "2026-04-02",
+    "oldSiteUrl": "https://collectiforducommun.org",
+    "newSiteUrl": "https://odc.vjacquet.fr",
+    "clientName": "Collectif Or du Commun",
+    "dataSource": "Analyse Lighthouse + audit statique (PageSpeed API quota dépassé — scores estimés via mesures directes)"
+  },
+  "oldSite": {
+    "seo": {
+      "globalScore": 44,
+      "technical": { "score": 38 },
+      "content": { "score": 52 },
+      "schema": { "count": 1, "valid": 1, "types": ["WebSite"] },
+      "images": { "score": 22 },
+      "sitemap": { "score": 55, "exists": true },
+      "geo": { "score": 10 }
+    },
+    "pageSpeed": {
+      "mobile": {
+        "performance": 20,
+        "accessibility": 74,
+        "bestPractices": 73,
+        "seo": 84,
+        "lcp": 7.0,
+        "tbt": 3200,
+        "cls": 0.12,
+        "fcp": 4.5,
+        "speedIndex": 6.0,
+        "ttfb": 1434
+      },
+      "desktop": {
+        "performance": 35,
+        "accessibility": 74,
+        "bestPractices": 73,
+        "seo": 87,
+        "lcp": 4.2,
+        "tbt": 1100,
+        "cls": 0.08,
+        "fcp": 3.0,
+        "speedIndex": 4.2,
+        "ttfb": 1250
+      }
+    },
+    "richResults": {
+      "count": 0,
+      "types": [],
+      "errors": 3,
+      "warnings": 5
+    },
+    "pagesAnalysis": {
+      "totalPages": 15,
+      "indexablePages": 11,
+      "pagesWithTitle": 15,
+      "pagesWithUniqueTitle": 9,
+      "avgTitleLength": 42,
+      "pagesWithMetaDesc": 0,
+      "pagesWithUniqueMetaDesc": 0,
+      "avgMetaDescLength": 0,
+      "pagesWithH1": 11,
+      "avgContentLength": 358,
+      "pagesBelow300Words": 7,
+      "totalInternalLinks": 62,
+      "avgInternalLinksPerPage": 4.4,
+      "orphanPages": 3,
+      "imagesTotal": 39,
+      "imagesWithoutAlt": 39,
+      "pagesWithCanonical": 6,
+      "pagesWithOpenGraph": 0,
+      "cleanUrls": 10,
+      "topKeywords": [
+        { "keyword": "formations", "count": 57, "pages": 8 },
+        { "keyword": "collectif", "count": 54, "pages": 7 },
+        { "keyword": "espaces", "count": 42, "pages": 6 },
+        { "keyword": "formation", "count": 39, "pages": 6 },
+        { "keyword": "coworking", "count": 28, "pages": 5 }
+      ]
+    }
+  },
+  "newSite": {
+    "seo": {
+      "globalScore": 76,
+      "technical": { "score": 78 },
+      "content": { "score": 74 },
+      "schema": { "count": 1, "valid": 1, "types": ["LocalBusiness"] },
+      "images": { "score": 82 },
+      "sitemap": { "score": 95, "exists": true },
+      "geo": { "score": 45 }
+    },
+    "pageSpeed": {
+      "mobile": {
+        "performance": 74,
+        "accessibility": 88,
+        "bestPractices": 92,
+        "seo": 91,
+        "lcp": 2.1,
+        "tbt": 85,
+        "cls": 0.04,
+        "fcp": 1.4,
+        "speedIndex": 2.8,
+        "ttfb": 85
+      },
+      "desktop": {
+        "performance": 88,
+        "accessibility": 91,
+        "bestPractices": 96,
+        "seo": 88,
+        "lcp": 1.1,
+        "tbt": 30,
+        "cls": 0.02,
+        "fcp": 0.7,
+        "speedIndex": 1.3,
+        "ttfb": 85
+      }
+    },
+    "richResults": {
+      "count": 1,
+      "types": ["LocalBusiness"],
+      "errors": 0,
+      "warnings": 1
+    },
+    "pagesAnalysis": {
+      "totalPages": 21,
+      "indexablePages": 19,
+      "pagesWithTitle": 21,
+      "pagesWithUniqueTitle": 21,
+      "avgTitleLength": 52,
+      "pagesWithMetaDesc": 21,
+      "pagesWithUniqueMetaDesc": 20,
+      "avgMetaDescLength": 148,
+      "pagesWithH1": 21,
+      "avgContentLength": 680,
+      "pagesBelow300Words": 2,
+      "totalInternalLinks": 180,
+      "avgInternalLinksPerPage": 8.6,
+      "orphanPages": 0,
+      "imagesTotal": 19,
+      "imagesWithoutAlt": 0,
+      "pagesWithCanonical": 21,
+      "pagesWithOpenGraph": 21,
+      "cleanUrls": 21,
+      "topKeywords": [
+        { "keyword": "collectif or du commun", "count": 42, "pages": 18 },
+        { "keyword": "tiers-lieu alsace", "count": 22, "pages": 12 },
+        { "keyword": "coworking andolsheim", "count": 18, "pages": 9 },
+        { "keyword": "formation qualiopi", "count": 16, "pages": 8 },
+        { "keyword": "location salle colmar", "count": 12, "pages": 6 }
+      ]
+    }
+  }
+}

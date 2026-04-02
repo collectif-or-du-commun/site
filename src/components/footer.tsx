@@ -15,7 +15,7 @@ const formationLinks = [
   { label: "L'Campus", href: "/formations/lcampus" },
   { label: "S'entrApprendre", href: "/formations/sentrapprendre" },
   { label: "Coup de pouce", href: "/formations/coup-de-pouce" },
-  { label: "Ateliers adherents", href: "/formations/ateliers-adherents" },
+  { label: "Ateliers adhérents", href: "/formations/ateliers-adherents" },
 ]
 
 const contactInfo = [
@@ -69,7 +69,7 @@ export function Footer() {
               Collectif Or du Commun
             </Link>
             <p className="mt-3 text-sm text-white/70">
-              Tiers-lieu associatif a Andolsheim, Alsace
+              Tiers-lieu associatif à Andolsheim, Alsace
             </p>
             <div className="mt-5 flex gap-3">
               {socialLinks.map((social) => (
@@ -134,7 +134,7 @@ export function Footer() {
           <p className="text-sm text-white/50">&copy; 2026 Collectif Or du Commun</p>
           <div className="flex gap-6">
             <Link href="/mentions-legales" className="text-sm text-white/50 transition hover:text-or">
-              Mentions legales
+              Mentions légales
             </Link>
             <Link href="/cgu" className="text-sm text-white/50 transition hover:text-or">
               CGU

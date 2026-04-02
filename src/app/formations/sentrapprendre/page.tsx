@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     "Devenez formateur-entrepreneur : 92h de formation d'octobre 2026 à février 2027. Pour consultants, coaches et experts. 3 800€ à 5 200€. Financement DEFFINO possible.",
 };
 
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const sessions = [
   { date: "16–17 oct. 2026", theme: "Construction de la prestation · Réconcilier sens, talent et revenu" },
@@ -106,7 +105,7 @@ export default function SEntrApprendrePage() {
             </div>
             <div>
               <Image
-                src={`${IMAGE_BASE}odc-sentrapprendre.jpg`}
+                src="/images/atelier-vert.jpg"
                 alt="S'entrApprendre — formation formateurs-entrepreneurs"
                 width={500}
                 height={380}

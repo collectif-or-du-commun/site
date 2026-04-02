@@ -3,12 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "La Fresque des Energies",
+  title: "La Fresque des Énergies",
   description:
-    "Atelier collaboratif pour comprendre les enjeux energetiques de maniere ludique. Pour entreprises et associations.",
+    "Atelier collaboratif pour comprendre les enjeux énergétiques de manière ludique. Pour entreprises et associations à Andolsheim, Alsace.",
 };
-
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const infoRows = [
   { label: "Durée", value: "3h" },
@@ -94,7 +92,7 @@ export default function FresqueEnergiesPage() {
           {/* Right: image */}
           <div className="relative w-full h-80 lg:h-[380px]">
             <Image
-              src={`${IMAGE_BASE}odc-fresque-energies-1-scaled.jpg`}
+              src="/images/atelier-couleurs.jpg"
               alt="Atelier Fresque des Énergies en action"
               fill
               className="object-cover rounded-2xl shadow-lg"
