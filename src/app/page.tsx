@@ -15,6 +15,7 @@ import { FormationsSection } from "@/components/home/formations-section";
 import { VideoSection } from "@/components/home/video-section";
 import { PresseSection } from "@/components/home/presse-section";
 import { LocationSection } from "@/components/home/location-section";
+import { ReviewsSection } from "@/components/home/reviews-section";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <BeforeWeekSection />
       <FormationsSection />
       <VideoSection />
+      <ReviewsSection />
       <PresseSection />
       <LocationSection />
     </>
