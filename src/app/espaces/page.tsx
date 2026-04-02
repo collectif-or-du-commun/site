@@ -10,25 +10,23 @@ export const metadata: Metadata = {
     "Decouvrez les espaces du Collectif Or du Commun : coworking, salles, guichet ouvert.",
 };
 
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
-
 const espaces = [
   {
-    img: "odc-espace-coworking-discussion-scaled.jpg",
+    img: "/images/before-week-duo.jpg",
     alt: "Espace coworking",
     title: "Espace coworking",
     desc: "Postes individuels, wifi haut débit, café. Travaillez dans un cadre professionnel et convivial.",
     href: "/espaces/nos-locaux",
   },
   {
-    img: "odc-espace-commun-cafe.jpg",
+    img: "/images/cafe-commun.jpg",
     alt: "Espace commun",
     title: "Espace commun",
     desc: "Cuisine équipée, espace détente, jardin. Le lieu idéal pour les pauses et les rencontres.",
     href: "/espaces/nos-locaux",
   },
   {
-    img: "odc-salle-formation.jpg",
+    img: "/images/formation-coaching.jpg",
     alt: "Salles de formation",
     title: "Salles de formation",
     desc: "2 salles modulables pour vos ateliers, formations et réunions.",
@@ -83,7 +81,7 @@ export default function EspacesPage() {
             {/* Right */}
             <div>
               <Image
-                src={`${IMAGE_BASE}odc-equipe-fenetre.jpg`}
+                src="/images/equipe-fenetre.jpg"
                 alt="Equipe du Collectif"
                 width={600}
                 height={450}
@@ -106,7 +104,7 @@ export default function EspacesPage() {
               >
                 <div className="relative h-48 w-full">
                   <Image
-                    src={`${IMAGE_BASE}${espace.img}`}
+                    src={espace.img}
                     alt={espace.alt}
                     fill
                     className="object-cover"

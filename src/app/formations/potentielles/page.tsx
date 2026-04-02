@@ -67,8 +67,8 @@ export default function PotentiellesPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://collectiforducommun.org/wp-content/uploads/2026/03/odc-potentielles-1-scaled.jpg"
-                alt="Participantes du programme Les Potenti'Elles"
+                src="/images/potentielles-groupe.jpg"
+                alt="Participantes du programme Les Potenti'Elles — remise de certificats"
                 width={580}
                 height={420}
                 className="rounded-2xl shadow-xl w-full object-cover"

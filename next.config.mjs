@@ -7,11 +7,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "collectiforducommun.org",
-        pathname: "/wp-content/uploads/**",
-      },
-      {
-        protocol: "https",
         hostname: "img.youtube.com",
         pathname: "/**",
       },

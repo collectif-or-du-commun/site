@@ -84,8 +84,8 @@ export default function OrizonLabPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://collectiforducommun.org/wp-content/uploads/2026/03/odc-salle-formation.jpg"
-                alt="Salle de formation ORizon LAB"
+                src="/images/formation-binome.jpg"
+                alt="Séance ORizon LAB — accompagnement numérique"
                 width={580}
                 height={420}
                 className="rounded-2xl shadow-xl w-full object-cover"

@@ -19,8 +19,6 @@ export const metadata: Metadata = {
     "Louez nos salles à Andolsheim : salle de réunion (8 pers), grande salle (20 pers), espace coworking. Équipé, parking gratuit, à 10 min de Colmar.",
 };
 
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
-
 // ─── Tarifs issus du flyer officiel 2026 ────────────────────────────────────
 const espaces = [
   {
@@ -28,7 +26,7 @@ const espaces = [
     name: "Grande salle",
     subtitle: "65 m² · modulable",
     capacity: "Jusqu'à 20 personnes",
-    image: `${IMAGE_BASE}odc-salle-formation.jpg`,
+    image: "/images/atelier-jardinage.jpg",
     alt: "Grande salle de formation Or du Commun",
     description:
       "Deux salles de formation modulables et entièrement équipées. Configuration adaptable : cours, îlots, U ou théâtre. Parfaite pour formations, conférences et ateliers collectifs.",
@@ -44,7 +42,7 @@ const espaces = [
     name: "Salle de réunion",
     subtitle: "30 m² · lumière naturelle",
     capacity: "Jusqu'à 8–10 personnes",
-    image: `${IMAGE_BASE}odc-espace-coworking-discussion-scaled.jpg`,
+    image: "/images/coworking-membre.jpg",
     alt: "Salle de réunion Or du Commun",
     description:
       "Idéale pour les réunions, entretiens, workshops en petit groupe ou formations restreintes. Modulable, lumière naturelle, entièrement équipée.",
@@ -60,7 +58,7 @@ const espaces = [
     name: "Bureau individuel",
     subtitle: "10 m² · privatisable",
     capacity: "1 à 2 personnes",
-    image: `${IMAGE_BASE}odc-espace-commun-cafe.jpg`,
+    image: "/images/espace-cuisine.jpg",
     alt: "Bureau individuel Or du Commun",
     description:
       "Un bureau privatisable pour travailler au calme, recevoir un client ou tenir un entretien. Accès à la cuisine partagée et au jardin. Idéal pour les indépendants.",
@@ -135,7 +133,7 @@ export default function LocationSallesPage() {
             </div>
             <div className="relative hidden lg:block">
               <Image
-                src={`${IMAGE_BASE}odc-salle-formation.jpg`}
+                src="/images/coaching-trio.jpg"
                 alt="Salles Or du Commun Andolsheim"
                 width={580}
                 height={400}
@@ -283,7 +281,7 @@ export default function LocationSallesPage() {
             </div>
             <div>
               <Image
-                src={`${IMAGE_BASE}odc-espace-coworking-discussion-scaled.jpg`}
+                src="/images/evenement-odc.jpg"
                 alt="Espace coworking Or du Commun Andolsheim"
                 width={560}
                 height={400}
@@ -331,16 +329,16 @@ export default function LocationSallesPage() {
           </div>
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 auto-rows-[180px]">
             <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
-              <Image src={`${IMAGE_BASE}odc-espace-coworking-discussion-scaled.jpg`} alt="Salle de réunion" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/atelier-couleurs.jpg" alt="Salle de réunion" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden relative">
-              <Image src={`${IMAGE_BASE}odc-salle-formation.jpg`} alt="Grande salle" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/atelier-vert.jpg" alt="Grande salle" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden relative">
-              <Image src={`${IMAGE_BASE}odc-espace-commun-cafe.jpg`} alt="Espace commun" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/equipe-exterieur.jpg" alt="Espace commun" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="col-span-2 rounded-2xl overflow-hidden relative">
-              <Image src={`${IMAGE_BASE}odc-evenement-communaute-scaled.jpg`} alt="Événement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/fete-communaute.jpg" alt="Événement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>

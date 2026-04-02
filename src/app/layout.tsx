@@ -66,7 +66,7 @@ const jsonLd = {
     "https://www.facebook.com/Collectiforducommun",
     "https://fr.linkedin.com/company/collectif-or-du-commun"
   ],
-  "image": "https://collectiforducommun.org/wp-content/uploads/2026/03/odc-exterieur-batiment.jpg",
+  "image": "https://odc.vjacquet.fr/images/jardin-odc.jpg",
   "priceRange": "€",
   "areaServed": {
     "@type": "GeoCircle",

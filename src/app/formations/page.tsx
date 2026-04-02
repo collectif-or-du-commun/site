@@ -87,13 +87,12 @@ export default function FormationsPage() {
             ))}
           </div>
         </div>
-        <div className="mt-10 w-full">
+        <div className="relative mt-10 h-[480px] w-full overflow-hidden">
           <Image
-            src="https://collectiforducommun.org/wp-content/uploads/2026/03/odc-salle-formation.jpg"
+            src="/images/formation-salle.jpg"
             alt="Salle de formation du Collectif Or du Commun"
-            width={1920}
-            height={300}
-            className="h-[300px] w-full object-cover"
+            fill
+            className="object-cover object-center"
             priority
           />
         </div>

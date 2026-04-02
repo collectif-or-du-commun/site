@@ -133,7 +133,7 @@ export function HeroSection() {
           >
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <Image
-                src="https://collectiforducommun.org/wp-content/uploads/2026/03/odc-before-week.jpg"
+                src="/images/before-week-event.jpg"
                 alt="Communauté du Collectif Or du Commun"
                 width={600}
                 height={450}

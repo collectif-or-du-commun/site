@@ -35,8 +35,8 @@ export function LocationSection() {
           </div>
           <div>
             <Image
-              src="https://collectiforducommun.org/wp-content/uploads/2026/03/odc-exterieur-batiment.jpg"
-              alt="Batiment du Collectif Or du Commun a Andolsheim"
+              src="/images/jardin-odc.jpg"
+              alt="Jardin du Collectif Or du Commun a Andolsheim"
               width={600}
               height={400}
               className="rounded-2xl shadow-lg object-cover w-full"
