@@ -25,7 +25,7 @@ const programs = [
     badge: "Numerique",
     badgeColor: "bg-bleu/15 text-bleu",
     description:
-      "Formation aux outils numeriques et a la transformation digitale.",
+      "Formation aux outils numériques et à la transformation digitale.",
     href: "/formations/orizon-lab",
   },
   {

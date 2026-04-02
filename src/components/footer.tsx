@@ -19,7 +19,7 @@ const formationLinks = [
 ]
 
 const contactInfo = [
-  { icon: MapPin, text: "5 rue Sainte-Marie, 68280 Andolsheim" },
+  { icon: MapPin, text: "4 Grand'Rue, 68280 Andolsheim" },
   { icon: Mail, text: "contact@collectiforducommun.org" },
   { icon: Phone, text: "07 55 53 08 57" },
   { icon: Clock, text: "Lun-Ven : 8h-18h" },

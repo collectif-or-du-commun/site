@@ -7,7 +7,7 @@ import { SectionTitle } from "@/components/section-title";
 export const metadata: Metadata = {
   title: "Nous vous accueillons",
   description:
-    "Decouvrez les espaces du Collectif Or du Commun : coworking, salles, guichet ouvert.",
+    "Découvrez les espaces du Collectif Or du Commun : coworking, salles de formation et guichet ouvert à Andolsheim.",
 };
 
 const espaces = [

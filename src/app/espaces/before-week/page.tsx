@@ -7,10 +7,8 @@ import { SectionTitle } from "@/components/section-title";
 export const metadata: Metadata = {
   title: "Le Before-Week",
   description:
-    "Une semaine gratuite pour decouvrir le coworking et rencontrer la communaute du Collectif.",
+    "Une semaine gratuite pour découvrir le coworking et rencontrer la communauté du Collectif Or du Commun à Andolsheim.",
 };
-
-const IMAGE_BASE = "https://collectiforducommun.org/wp-content/uploads/2026/03/";
 
 const steps = [
   {
@@ -75,8 +73,8 @@ export default function BeforeWeekPage() {
       {/* Image full */}
       <div className="relative w-full h-[400px]">
         <Image
-          src={`${IMAGE_BASE}odc-before-week.jpg`}
-          alt="Before-Week au Collectif Or du Commun"
+          src="/images/soiree-conference.jpg"
+          alt="Événement communauté au Collectif Or du Commun"
           fill
           className="object-cover"
           priority

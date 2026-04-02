@@ -19,17 +19,31 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://odc.vjacquet.fr"),
   title: {
     default: "Collectif Or du Commun | Tiers-lieu Andolsheim, Alsace",
     template: "%s | Collectif Or du Commun",
   },
   description:
-    "Tiers-lieu associatif a Andolsheim (68). Coworking, formations, evenements et accompagnement pour entrepreneurs et independants en Alsace.",
+    "Tiers-lieu associatif à Andolsheim (68). Coworking, formations, événements et accompagnement pour entrepreneurs et indépendants en Alsace.",
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://collectiforducommun.org",
+    url: "https://odc.vjacquet.fr",
     siteName: "Collectif Or du Commun",
+    images: [
+      {
+        url: "/images/before-week-event.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Collectif Or du Commun — tiers-lieu à Andolsheim, Alsace",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@collectiforducommun",
+    images: ["/images/before-week-event.jpg"],
   },
 };
 
@@ -38,7 +52,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   "name": "Collectif Or du Commun",
   "description": "Tiers-lieu associatif à Andolsheim (68). Coworking, formations, événements et accompagnement pour entrepreneurs et indépendants en Alsace.",
-  "url": "https://collectiforducommun.org",
+  "url": "https://odc.vjacquet.fr",
   "telephone": "+33755530857",
   "email": "contact@collectiforducommun.org",
   "address": {
@@ -62,7 +76,9 @@ const jsonLd = {
       "closes": "18:00"
     }
   ],
+  "foundingDate": "2018",
   "sameAs": [
+    "https://collectiforducommun.org",
     "https://www.facebook.com/Collectiforducommun",
     "https://fr.linkedin.com/company/collectif-or-du-commun"
   ],
