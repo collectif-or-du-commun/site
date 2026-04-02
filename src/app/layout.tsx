@@ -33,13 +33,65 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Collectif Or du Commun",
+  "description": "Tiers-lieu associatif à Andolsheim (68). Coworking, formations, événements et accompagnement pour entrepreneurs et indépendants en Alsace.",
+  "url": "https://collectiforducommun.org",
+  "telephone": "+33755530857",
+  "email": "contact@collectiforducommun.org",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4 Grand'Rue",
+    "addressLocality": "Andolsheim",
+    "postalCode": "68280",
+    "addressCountry": "FR",
+    "addressRegion": "Alsace"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.0418,
+    "longitude": 7.3776
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/Collectiforducommun",
+    "https://fr.linkedin.com/company/collectif-or-du-commun"
+  ],
+  "image": "https://collectiforducommun.org/wp-content/uploads/2026/03/odc-exterieur-batiment.jpg",
+  "priceRange": "€",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.0418,
+      "longitude": 7.3776
+    },
+    "geoRadius": "30000"
+  }
+};
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // JSON.stringify produit du JSON statique hardcodé — aucun input utilisateur, pas de risque XSS
+  const ldJson = JSON.stringify(jsonLd);
   return (
     <html lang="fr" className={`${playfair.variable} ${inter.variable}`}>
+      <head>
+        {/* eslint-disable-next-line react/no-danger */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson }} />
+      </head>
       <body className="font-inter antialiased">
         <Navbar />
         <main>{children}</main>

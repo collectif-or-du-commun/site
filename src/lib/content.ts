@@ -10,7 +10,7 @@ export const MARQUEE_ITEMS = [
   "🗓 Before-Week : tous les lundis 9h–11h, accès libre et gratuit",
   "🌟 ORizon LAB · 20-28 ans · Prochaine session nov-déc 2026",
   "📍 4 Grand'Rue, 68280 Andolsheim — à 10 min de Colmar",
-  "📞 06 70 89 30 07 · contact@collectiforducommun.org",
+  "📞 07 55 53 08 57 · contact@collectiforducommun.org",
 ];
 
 export type EventCategory = "before-week" | "formation" | "evenement" | "atelier";

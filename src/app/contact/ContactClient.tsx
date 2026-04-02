@@ -230,10 +230,10 @@ export function ContactClient() {
               <div>
                 <p className="font-medium text-bleu-dark text-sm">Telephone</p>
                 <a
-                  href="tel:+33670893007"
+                  href="tel:+33755530857"
                   className="text-gris text-sm mt-0.5 hover:text-bleu transition-colors block"
                 >
-                  06 70 89 30 07
+                  07 55 53 08 57
                 </a>
               </div>
             </div>
