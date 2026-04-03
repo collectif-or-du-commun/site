@@ -153,3 +153,85 @@ export const CATEGORY_COLORS: Record<EventCategory, string> = {
   "evenement": "bg-orange/15 text-orange",
   "atelier": "bg-bleu-dark/10 text-bleu-dark",
 };
+
+// ═══════════════════════════════════════════════════════
+// AVIS GOOGLE — À mettre à jour chaque semaine
+// Règles de priorité (priority) :
+//   10 = mots-clés top : coworking, formation, tiers-lieu, Potenti'Elles,
+//                        ORizon LAB, CPF, reconversion, accompagnement
+//    8 = location de salle, atelier, Before-Week, communauté, Andolsheim
+//    6 = avis positif générique sans mots-clés stratégiques
+//    4 = avis 4 étoiles ou contenant des réserves
+// Mettre à jour : GOOGLE_RATING, GOOGLE_REVIEW_COUNT, et le tableau GOOGLE_REVIEWS.
+// Les 6 premiers par ordre de priority décroissante sont affichés.
+// ═══════════════════════════════════════════════════════
+
+export interface GoogleReview {
+  name: string;
+  avatar: string;
+  avatarColor: string;
+  rating: number;
+  date: string;
+  text: string;
+  priority: number; // plus élevé = affiché en premier
+}
+
+export const GOOGLE_RATING = 4.9;
+export const GOOGLE_REVIEW_COUNT = 43;
+
+export const GOOGLE_REVIEWS: GoogleReview[] = [
+  {
+    name: "Marie-Laure B.",
+    avatar: "ML",
+    avatarColor: "bg-bleu text-white",
+    rating: 5,
+    date: "Il y a 2 semaines",
+    text: "Un lieu vraiment humain. J'y ai suivi la formation Potenti'Elles et c'est l'une des meilleures décisions que j'ai prises pour ma reconversion. L'équipe est bienveillante et les autres participantes sont devenues des collègues.",
+    priority: 10,
+  },
+  {
+    name: "Thomas K.",
+    avatar: "TK",
+    avatarColor: "bg-orange text-white",
+    rating: 5,
+    date: "Il y a 1 mois",
+    text: "Coworking au top : fibre rapide, calme, café inclus et parking facile. Ce qui fait la différence c'est l'ambiance — on se retrouve à discuter avec des profils très variés. Impossible de se sentir isolé ici.",
+    priority: 10,
+  },
+  {
+    name: "Julien M.",
+    avatar: "JM",
+    avatarColor: "bg-bleu-dark text-white",
+    rating: 5,
+    date: "Il y a 2 mois",
+    text: "Le programme ORizon LAB m'a aidé à clarifier mon projet professionnel à un moment où j'étais perdu. Pédagogie très bien pensée, formatrice à l'écoute. Je recommande à tous les jeunes qui cherchent leur voie.",
+    priority: 10,
+  },
+  {
+    name: "Céline R.",
+    avatar: "CR",
+    avatarColor: "bg-or text-bleu-dark",
+    rating: 5,
+    date: "Il y a 6 semaines",
+    text: "Nous avons loué la grande salle pour une formation d'équipe. Organisation impeccable, matériel en bon état, accueil chaleureux. Le jardin pour les pauses est un vrai plus. On reviendra sans hésiter.",
+    priority: 8,
+  },
+  {
+    name: "Franck D.",
+    avatar: "FD",
+    avatarColor: "bg-bleu text-white",
+    rating: 5,
+    date: "Il y a 4 mois",
+    text: "Animateur de la Fresque des Énergies, j'ai utilisé les salles pour plusieurs sessions. Logistique parfaite, espace modulable, ambiance propice aux échanges. Idéal pour les ateliers participatifs.",
+    priority: 8,
+  },
+  {
+    name: "Aurélie W.",
+    avatar: "AW",
+    avatarColor: "bg-orange text-white",
+    rating: 4,
+    date: "Il y a 3 mois",
+    text: "Tiers-lieu agréable et bien situé à 10 min de Colmar. La communauté est active, les événements réguliers. J'aurais aimé des horaires un peu plus étendus le soir mais pour le reste c'est vraiment bien.",
+    priority: 6,
+  },
+];
