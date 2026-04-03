@@ -176,62 +176,53 @@ export interface GoogleReview {
   priority: number; // plus élevé = affiché en premier
 }
 
-export const GOOGLE_RATING = 4.9;
-export const GOOGLE_REVIEW_COUNT = 43;
+export const GOOGLE_RATING = 5.0;
+export const GOOGLE_REVIEW_COUNT = 129;
 
 export const GOOGLE_REVIEWS: GoogleReview[] = [
   {
-    name: "Marie-Laure B.",
-    avatar: "ML",
+    name: "Vincent Vauthier",
+    avatar: "VV",
     avatarColor: "bg-bleu text-white",
     rating: 5,
-    date: "Il y a 2 semaines",
-    text: "Un lieu vraiment humain. J'y ai suivi la formation Potenti'Elles et c'est l'une des meilleures décisions que j'ai prises pour ma reconversion. L'équipe est bienveillante et les autres participantes sont devenues des collègues.",
+    date: "il y a 2 ans",
+    text: "Or Du Commun est un espace de coworking. Un accueil chaleureux où l'écoute, l'entraide et la bienveillance sont des valeurs présentes dans ce lieu. On s'y sent bien et serein dès qu'on arrive.",
     priority: 10,
   },
   {
-    name: "Thomas K.",
-    avatar: "TK",
-    avatarColor: "bg-orange text-white",
-    rating: 5,
-    date: "Il y a 1 mois",
-    text: "Coworking au top : fibre rapide, calme, café inclus et parking facile. Ce qui fait la différence c'est l'ambiance — on se retrouve à discuter avec des profils très variés. Impossible de se sentir isolé ici.",
-    priority: 10,
-  },
-  {
-    name: "Julien M.",
-    avatar: "JM",
-    avatarColor: "bg-bleu-dark text-white",
-    rating: 5,
-    date: "Il y a 2 mois",
-    text: "Le programme ORizon LAB m'a aidé à clarifier mon projet professionnel à un moment où j'étais perdu. Pédagogie très bien pensée, formatrice à l'écoute. Je recommande à tous les jeunes qui cherchent leur voie.",
-    priority: 10,
-  },
-  {
-    name: "Céline R.",
-    avatar: "CR",
+    name: "Anne Schmitt Bourgeois",
+    avatar: "AS",
     avatarColor: "bg-or text-bleu-dark",
     rating: 5,
-    date: "Il y a 6 semaines",
-    text: "Nous avons loué la grande salle pour une formation d'équipe. Organisation impeccable, matériel en bon état, accueil chaleureux. Le jardin pour les pauses est un vrai plus. On reviendra sans hésiter.",
+    date: "il y a 2 ans",
+    text: "Faire connaissance avec les personnes qui animent ou se retrouvent à Or du Commun m'apporte beaucoup de joie, de connaissances, de confiance, d'inspiration pour développer mon activité !",
+    priority: 9,
+  },
+  {
+    name: "Olivier Garrabé",
+    avatar: "OG",
+    avatarColor: "bg-bleu-dark text-white",
+    rating: 5,
+    date: "il y a 10 mois",
+    text: "Je fréquente le collectif Or du Commun depuis quelques mois et je m'y sens accueilli par une équipe chaleureuse et professionnelle. Je me rends régulièrement aux Before-Week du lundi matin.",
+    priority: 9,
+  },
+  {
+    name: "Sylvie Colin",
+    avatar: "SC",
+    avatarColor: "bg-orange text-white",
+    rating: 5,
+    date: "il y a 2 ans",
+    text: "Collectif que j'ai découvert grâce à mon amie Marine. Ravie de ce qu'il s'y passe, des interactions diverses et variées. On se sent moins seule quand on est dans une phase entrepreneuriale.",
     priority: 8,
   },
   {
-    name: "Franck D.",
-    avatar: "FD",
+    name: "Nathalie Bottemer",
+    avatar: "NB",
     avatarColor: "bg-bleu text-white",
     rating: 5,
-    date: "Il y a 4 mois",
-    text: "Animateur de la Fresque des Énergies, j'ai utilisé les salles pour plusieurs sessions. Logistique parfaite, espace modulable, ambiance propice aux échanges. Idéal pour les ateliers participatifs.",
-    priority: 8,
-  },
-  {
-    name: "Aurélie W.",
-    avatar: "AW",
-    avatarColor: "bg-orange text-white",
-    rating: 4,
-    date: "Il y a 3 mois",
-    text: "Tiers-lieu agréable et bien situé à 10 min de Colmar. La communauté est active, les événements réguliers. J'aurais aimé des horaires un peu plus étendus le soir mais pour le reste c'est vraiment bien.",
+    date: "il y a 2 ans",
+    text: "Je suis maintenant une habituée de ce magnifique lieu et surtout des superbes actions qui y sont proposées dans une ambiance bienveillante et chaleureuse.",
     priority: 6,
   },
 ];
