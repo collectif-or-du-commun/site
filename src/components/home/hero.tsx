@@ -57,9 +57,9 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-6 font-playfair text-[2.4rem] font-bold leading-tight text-bleu md:text-5xl lg:text-[58px]"
             >
-              Un tiers-lieu à{" "}
+              Bien plus qu&apos;un{" "}
               <span className="relative inline-block">
-                taille humaine
+                collectif
                 <motion.span
                   className="absolute -bottom-1 left-0 h-1 rounded-full bg-or"
                   initial={{ width: 0 }}
