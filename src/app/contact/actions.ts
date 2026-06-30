@@ -44,7 +44,7 @@ export async function sendContactEmail(
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Site Or du Commun <contact@odc.vjacquet.fr>",
+        from: "Site Or du commun <contact@odc.vjacquet.fr>",
         to: ["contact@collectiforducommun.org"],
         reply_to: email,
         subject: `[Site] ${sujet} — ${nom}`,

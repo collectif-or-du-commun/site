@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "id": "potentielles-2026-04",
+      "title": "Les Potenti'Elles — Session de printemps",
+      "date": "2026-04-14",
+      "time": "14h–17h",
+      "location": "Salle de formation, Andolsheim",
+      "category": "formation",
+      "description": "Programme d'accompagnement entrepreneurial au féminin. Réunion d'information pour la prochaine cohorte.",
+      "registrationUrl": "/contact",
+      "spots": 12
+    },
+    {
+      "id": "fresque-energies-2026-04",
+      "title": "Atelier Fresque des Énergies",
+      "date": "2026-04-22",
+      "time": "9h–12h30",
+      "location": "Grande salle, Andolsheim",
+      "category": "atelier",
+      "description": "Atelier collaboratif pour comprendre les enjeux énergétiques de manière ludique et collective.",
+      "registrationUrl": "/contact",
+      "spots": 15
+    },
+    {
+      "id": "orizon-lab-info-2026-05",
+      "title": "ORizon LAB — Réunion d'info",
+      "date": "2026-05-12",
+      "time": "18h–19h30",
+      "location": "Collectif Or du commun, Andolsheim",
+      "category": "formation",
+      "description": "Présentation du programme ORizon LAB pour les 20–28 ans en projet professionnel.",
+      "registrationUrl": "/contact",
+      "spots": 20
+    },
+    {
+      "id": "fete-communaute-2026-06",
+      "title": "Fête de la communauté — Été 2026",
+      "date": "2026-06-20",
+      "time": "17h–22h",
+      "location": "Jardin du Collectif, Andolsheim",
+      "category": "evenement",
+      "description": "La grande fête annuelle du Collectif ! Barbecue, musique live, et plein de surprises pour les membres et leurs familles.",
+      "spots": 100
+    }
+  ]
+}

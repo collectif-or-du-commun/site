@@ -36,7 +36,7 @@ export function LocationSection() {
           <div>
             <Image
               src="/images/jardin-odc.jpg"
-              alt="Jardin du Collectif Or du Commun a Andolsheim"
+              alt="Jardin du Collectif Or du commun a Andolsheim"
               width={600}
               height={400}
               className="rounded-2xl shadow-lg object-cover w-full"

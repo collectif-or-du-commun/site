@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
-  description: "Mentions légales du Collectif Or du Commun, tiers-lieu associatif à Andolsheim (Haut-Rhin).",
+  description: "Mentions légales du Collectif Or du commun, tiers-lieu associatif à Andolsheim (Haut-Rhin).",
   alternates: {
     canonical: "/mentions-legales",
   },
@@ -25,7 +25,7 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-playfair text-2xl font-bold text-bleu mb-4">Éditeur du site</h2>
             <p>
-              <strong className="text-bleu-dark">Collectif Or du Commun</strong><br />
+              <strong className="text-bleu-dark">Collectif Or du commun</strong><br />
               Association loi 1901<br />
               4 Grand&apos;Rue, 68280 Andolsheim<br />
               Téléphone : 07 55 53 08 57<br />
@@ -45,7 +45,7 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-playfair text-2xl font-bold text-bleu mb-4">Propriété intellectuelle</h2>
             <p>
-              L&apos;ensemble des contenus présents sur ce site (textes, images, logos, graphismes) sont la propriété exclusive du Collectif Or du Commun ou de leurs auteurs respectifs. Toute reproduction, représentation ou diffusion, intégrale ou partielle, sans autorisation écrite préalable est interdite.
+              L&apos;ensemble des contenus présents sur ce site (textes, images, logos, graphismes) sont la propriété exclusive du Collectif Or du commun ou de leurs auteurs respectifs. Toute reproduction, représentation ou diffusion, intégrale ou partielle, sans autorisation écrite préalable est interdite.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-playfair text-2xl font-bold text-bleu mb-4">Liens externes</h2>
             <p>
-              Ce site contient des liens vers des sites tiers. Le Collectif Or du Commun n&apos;est pas responsable du contenu de ces sites externes et ne saurait être tenu responsable des dommages résultant de leur utilisation.
+              Ce site contient des liens vers des sites tiers. Le Collectif Or du commun n&apos;est pas responsable du contenu de ces sites externes et ne saurait être tenu responsable des dommages résultant de leur utilisation.
             </p>
           </div>
 

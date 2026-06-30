@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { SectionTitle } from "@/components/section-title";
 
 const needs = [
-  { icon: "💻", label: "Un espace de coworking", href: "/espaces" },
-  { icon: "📚", label: "Me former ou monter en compétences", href: "/formations" },
-  { icon: "☕", label: "Rencontrer d'autres entrepreneurs", href: "/espaces/before-week" },
-  { icon: "🏢", label: "Louer une salle pour un événement", href: "/espaces/nos-locaux" },
-  { icon: "🎯", label: "Être accompagné dans mon projet", href: "/espaces/guichet-ouvert" },
+  { icon: "🤝", label: "M'entourer d'une communauté qui me ressemble", href: "/espaces/before-week" },
+  { icon: "💻", label: "Travailler ailleurs que chez moi, dans de bonnes conditions", href: "/espaces" },
+  { icon: "📚", label: "Me former avec des experts et professionnels du terrain", href: "/formations" },
+  { icon: "✨", label: "Affirmer ma posture professionnelle", href: "/formations" },
+  { icon: "🏢", label: "Organiser un atelier, une formation ou un événement", href: "/location-salles" },
   { icon: "📅", label: "Voir les prochains événements", href: "/agenda" },
 ];
 

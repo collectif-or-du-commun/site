@@ -112,7 +112,7 @@ export default function LCampusPage() {
             </div>
             <div>
               <Image
-                src="/images/formation-binome.jpg"
+                src="/images/lcampus-visite.jpg"
                 alt="L'Campus — programme leadership au féminin"
                 width={500}
                 height={380}

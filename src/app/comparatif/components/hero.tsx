@@ -75,7 +75,7 @@ export function Hero() {
           <span className="bg-[#FFCA00] text-[#0A3F52] text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full">
             Rapport SEO
           </span>
-          <span className="text-white/50 text-sm">Collectif Or du Commun · 2 avril 2026</span>
+          <span className="text-white/50 text-sm">Collectif Or du commun · 2 juin 2026</span>
         </div>
 
         {/* Title */}
@@ -84,7 +84,7 @@ export function Hero() {
           <span className="text-[#FFCA00]">Google ne vous trouvait pas.</span>
         </h1>
         <p className="mt-5 text-lg text-white/70 max-w-2xl leading-relaxed">
-          Comparaison entre collectiforducommun.org (ancien WordPress) et odc.vjacquet.fr (nouveau site Next.js). Données issues d'une analyse Lighthouse + audit statique réalisée le 2 avril 2026.
+          Comparaison entre collectiforducommun.org (ancien WordPress) et odc.vjacquet.fr (nouveau site Next.js). Chiffres mesurés en direct le 2 juin 2026 : temps de réponse au serveur, poids des pages, audit du code des deux sites et données Semrush.
         </p>
 
         {/* Verdict badge */}
@@ -95,10 +95,10 @@ export function Hero() {
 
         {/* Score cards */}
         <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <ScoreCard label="Score SEO global" old={44} new={76} unit="/100" />
-          <ScoreCard label="Performance mobile" old={18} new={74} unit="/100" />
-          <ScoreCard label="Performance desktop" old={38} new={88} unit="/100" />
-          <ScoreCard label="Vitesse de réponse" old={1434} new={85} unit="ms" invert />
+          <ScoreCard label="Réponse serveur" old={1914} new={369} unit=" ms" invert />
+          <ScoreCard label="Poids de la page" old={45} new={18} unit=" Ko" invert />
+          <ScoreCard label="Pages avec meta description" old={0} new={20} />
+          <ScoreCard label="Pages avec données structurées" old={0} new={20} />
         </div>
       </div>
     </section>

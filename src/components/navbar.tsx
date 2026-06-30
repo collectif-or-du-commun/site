@@ -46,7 +46,7 @@ const navDropdowns: NavDropdown[] = [
   {
     label: "Nos programmes",
     items: [
-      { label: "Before-Week", href: "/espaces/before-week" },
+      { label: "Before-week", href: "/espaces/before-week" },
       { label: "Guichet Ouvert", href: "/espaces/guichet-ouvert" },
     ],
   },
@@ -106,7 +106,7 @@ export function Navbar() {
           className="font-playfair text-lg font-bold text-or transition-opacity hover:opacity-80 sm:text-xl"
           onClick={closeAll}
         >
-          Collectif Or du Commun
+          Collectif Or du commun
         </Link>
 
         {/* Desktop nav */}

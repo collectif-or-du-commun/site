@@ -17,7 +17,7 @@ import { SectionTitle } from "@/components/section-title";
 export const metadata: Metadata = {
   title: "Nos locaux",
   description:
-    "Découvrez les espaces du Collectif Or du Commun à Andolsheim : coworking, salles de formation, espace commun et jardin.",
+    "Découvrez les espaces du Collectif Or du commun à Andolsheim : coworking, salles de formation, espace commun et jardin.",
   alternates: {
     canonical: "/espaces/nos-locaux",
   },
@@ -75,7 +75,7 @@ export default function NosLocauxPage() {
           <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden">
             <div className="relative w-full h-full">
               <Image
-                src="/images/before-week-duo.jpg"
+                src="/images/mosaique-groupe.jpg"
                 alt="Espace coworking"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -86,7 +86,7 @@ export default function NosLocauxPage() {
           <div className="rounded-2xl overflow-hidden">
             <div className="relative w-full h-full">
               <Image
-                src="/images/cafe-commun.jpg"
+                src="/images/espace-commun-cuisine.jpg"
                 alt="Espace commun"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -173,7 +173,7 @@ export default function NosLocauxPage() {
                   Adresse
                 </h3>
                 <p className="text-gris leading-relaxed">
-                  Collectif Or du Commun
+                  Collectif Or du commun
                   <br />
                   Andolsheim, 68280
                   <br />

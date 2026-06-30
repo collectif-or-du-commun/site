@@ -17,15 +17,15 @@ export const metadata: Metadata = {
 const programs = [
   {
     title: "Les Potenti'Elles",
-    badge: "Femmes",
-    badgeColor: "bg-orange/15 text-orange",
+    badge: "Reconversion",
+    badgeColor: "bg-or/20 text-bleu-dark",
     description:
-      "Programme d'accompagnement entrepreneurial de 6 semaines (150h + 35h immersion) pour femmes en transition professionnelle. 6 participantes max, 385 € TTC reste à charge.",
+      "Accompagnement de 6 semaines (150h + 35h immersion) pour les femmes en transition professionnelle : se réinventer après un burn-out, une pause parentale ou une fin de contrat. 6 participantes max, 385 € TTC reste à charge.",
     href: "/formations/potentielles",
   },
   {
     title: "ORizon LAB",
-    badge: "Numérique",
+    badge: "20-28 ans",
     badgeColor: "bg-bleu/15 text-bleu",
     description:
       "7 semaines d'accompagnement pour les jeunes de 20 à 28 ans : connaissance de soi, exploration de métiers et immersion en entreprise. 100 € reste à charge.",
@@ -76,7 +76,7 @@ const faq = [
   },
   {
     q: "Les formations sont-elles accessibles aux personnes en situation de handicap ?",
-    a: "Nos locaux sont accessibles PMR et nous adaptons les modalités pédagogiques sur demande. Signalez votre situation lors de votre candidature pour que nous puissions préparer les aménagements nécessaires.",
+    a: "Nous adaptons les modalités pédagogiques sur demande. Signalez votre situation lors de votre candidature pour que nous puissions préparer ensemble les aménagements nécessaires.",
   },
   {
     q: "Comment se déroule l'inscription ?",
@@ -95,7 +95,7 @@ export default function FormationsPage() {
           </h1>
           <p className="mt-4 text-lg text-white/70 max-w-xl">
             Certifié Qualiopi, labellisé Tiers-lieux Compétences et Formation en Grand Est
-            depuis novembre 2023. Or du Commun propose des programmes pour les personnes
+            depuis novembre 2023. Or du commun propose des programmes pour les personnes
             en transition professionnelle à Andolsheim, Alsace.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
@@ -112,7 +112,7 @@ export default function FormationsPage() {
         <div className="relative mt-10 h-[480px] w-full overflow-hidden">
           <Image
             src="/images/formation-salle.jpg"
-            alt="Salle de formation du Collectif Or du Commun"
+            alt="Salle de formation du Collectif Or du commun"
             fill
             className="object-cover object-center"
             priority
@@ -132,7 +132,7 @@ export default function FormationsPage() {
                 Nos programmes sont construits avec des professionnels du terrain, co-construits avec les apprenants et reconnus par les organismes nationaux. La certification Qualiopi garantit l&apos;éligibilité aux financements publics et l&apos;exigence de nos processus pédagogiques.
               </p>
               <p className="mt-3 text-gris leading-relaxed">
-                Depuis 2018, le Collectif Or du Commun accompagne des personnes en transition professionnelle en Alsace. Nos programmes s&apos;adaptent à la réalité du terrain : rythme de vie, contraintes familiales, besoin de sens.
+                Depuis 2018, le Collectif Or du commun accompagne des personnes en transition professionnelle en Alsace. Nos programmes s&apos;adaptent à la réalité du terrain : rythme de vie, contraintes familiales, besoin de sens.
               </p>
               <div className="mt-6 rounded-xl bg-fond p-6 flex items-center gap-4">
                 <Star className="h-8 w-8 shrink-0 text-or" />
@@ -153,7 +153,7 @@ export default function FormationsPage() {
                 "Pédagogie active, participative et bienveillante",
                 "Suivi individualisé tout au long du parcours",
                 "Groupes restreints pour plus d'impact",
-                "Locaux accessibles PMR à Andolsheim (Haut-Rhin)",
+                "À Andolsheim (Haut-Rhin), à 10 min de Colmar",
               ].map((point) => (
                 <div key={point} className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 shrink-0 text-or mt-0.5" />
@@ -165,7 +165,7 @@ export default function FormationsPage() {
         </div>
       </section>
 
-      {/* Pourquoi choisir Or du Commun */}
+      {/* Pourquoi choisir Or du commun */}
       <section className="bg-fond py-20">
         <div className="mx-auto max-w-[1200px] px-6">
           <div className="mb-12 text-center">
@@ -173,7 +173,7 @@ export default function FormationsPage() {
               Nos engagements
             </span>
             <h2 className="font-playfair text-3xl font-bold text-bleu md:text-4xl">
-              Pourquoi choisir Or du Commun
+              Pourquoi choisir Or du commun
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
@@ -184,7 +184,7 @@ export default function FormationsPage() {
                   Certification Qualiopi
                 </h3>
                 <p className="mt-2 text-sm text-gris leading-relaxed">
-                  Nos formations sont certifiées Qualiopi, ce qui garantit leur éligibilité aux financements publics (CPF, Pôle Emploi, OPCO). Un organisme certifié est audité régulièrement sur ses process et résultats.
+                  La certification qualité Qualiopi a été délivrée au Collectif Or du commun au titre de la catégorie ACTION DE FORMATION. Elle garantit l&apos;éligibilité de nos formations aux financements publics : CPF, Pôle Emploi, OPCO.
                 </p>
               </div>
             </div>

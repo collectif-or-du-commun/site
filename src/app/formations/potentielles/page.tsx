@@ -37,12 +37,12 @@ export default function PotentiellesPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#E57A44] py-24">
+      <section className="bg-bleu-dark py-24">
         <div className="mx-auto max-w-[1200px] px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <span className="mb-5 inline-block rounded-full bg-white/20 px-4 py-2 text-sm font-medium text-white">
-                Formation Femmes · Transition professionnelle · 6 semaines
+                Reconversion · Transition professionnelle · 6 semaines
               </span>
               <h1 className="font-playfair text-4xl font-bold text-white md:text-5xl">
                 Les Potenti&apos;Elles, bâtir un nouveau projet professionnel
@@ -131,6 +131,22 @@ export default function PotentiellesPage() {
         </div>
       </section>
 
+      {/* Résultats */}
+      <section className="bg-bleu-dark py-16">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <div className="grid gap-8 sm:grid-cols-2 max-w-3xl mx-auto text-center">
+            <div>
+              <p className="font-playfair text-5xl font-bold text-or">100%</p>
+              <p className="mt-2 text-white/80">des participantes recommandent la formation</p>
+            </div>
+            <div>
+              <p className="font-playfair text-5xl font-bold text-or">85%</p>
+              <p className="mt-2 text-white/80">d&apos;insertion professionnelle à 6 mois</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Infos pratiques */}
       <section className="bg-fond py-20">
         <div className="mx-auto max-w-[1200px] px-6">
@@ -163,7 +179,7 @@ export default function PotentiellesPage() {
                 <MapPin className="h-5 w-5 shrink-0 text-or mt-0.5" />
                 <div>
                   <p className="font-semibold text-bleu-dark">Lieu</p>
-                  <p className="text-sm text-gris mt-0.5">Or du Commun · Andolsheim</p>
+                  <p className="text-sm text-gris mt-0.5">Or du commun · Andolsheim</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

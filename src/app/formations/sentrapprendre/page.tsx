@@ -108,7 +108,7 @@ export default function SEntrApprendrePage() {
             </div>
             <div>
               <Image
-                src="/images/atelier-vert.jpg"
+                src="/images/sentrapprendre-duo.jpg"
                 alt="S'entrApprendre — formation formateurs-entrepreneurs"
                 width={500}
                 height={380}

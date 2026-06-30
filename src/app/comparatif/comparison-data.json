@@ -3,7 +3,7 @@
     "dateAnalysis": "2026-04-02",
     "oldSiteUrl": "https://collectiforducommun.org",
     "newSiteUrl": "https://odc.vjacquet.fr",
-    "clientName": "Collectif Or du Commun",
+    "clientName": "Collectif Or du commun",
     "dataSource": "Analyse Lighthouse + audit statique (PageSpeed API quota dépassé — scores estimés via mesures directes)"
   },
   "oldSite": {

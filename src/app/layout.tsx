@@ -21,8 +21,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://odc.vjacquet.fr"),
   title: {
-    default: "Collectif Or du Commun | Tiers-lieu Andolsheim, Alsace",
-    template: "%s | Collectif Or du Commun",
+    default: "Collectif Or du commun | Tiers-lieu Andolsheim, Alsace",
+    template: "%s | Collectif Or du commun",
   },
   description:
     "Tiers-lieu associatif à Andolsheim (68). Coworking, formations, événements et accompagnement pour entrepreneurs et indépendants en Alsace.",
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://odc.vjacquet.fr",
-    siteName: "Collectif Or du Commun",
+    siteName: "Collectif Or du commun",
     images: [
       {
         url: "/images/before-week-event.jpg",
         width: 1200,
         height: 630,
-        alt: "Collectif Or du Commun — tiers-lieu à Andolsheim, Alsace",
+        alt: "Collectif Or du commun — tiers-lieu à Andolsheim, Alsace",
       },
     ],
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "EducationalOrganization"],
-  "name": "Collectif Or du Commun",
+  "name": "Collectif Or du commun",
   "description": "Tiers-lieu associatif à Andolsheim (68). Coworking, formations, événements et accompagnement pour entrepreneurs et indépendants en Alsace.",
   "url": "https://odc.vjacquet.fr",
   "telephone": "+33755530857",

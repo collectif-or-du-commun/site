@@ -6,32 +6,25 @@ import { PressCard } from "@/components/press-card";
 
 const articles = [
   {
+    source: "France Inter",
+    date: "Avril 2024",
+    title: "Le Collectif Or du commun dans « Carnets de campagne »",
+    url: "https://www.radiofrance.fr/franceinter/podcasts/carnets-de-campagne/carnets-de-campagne-du-mardi-30-avril-2024-3175856",
+    icon: "🎤",
+  },
+  {
     source: "Le Periscope",
     date: "Déc. 2024",
-    title: "Un tiers-lieu à Andolsheim, Or du Commun souffle sa 6ème bougie",
+    title: "Un tiers-lieu à Andolsheim, Or du commun souffle sa 6ème bougie",
     url: "https://le-periscope.info/actualites/economie/2024/12/un-tiers-lieu-a-andolsheim-or-du-commun-souffle-sa-6eme-bougie/",
     icon: "📰",
   },
   {
     source: "Podcast Theodora",
     date: "2024",
-    title: "Le Collectif Or du Commun en podcast",
+    title: "Le Collectif Or du commun en podcast",
     url: "https://smartlink.ausha.co/theodora",
     icon: "🎙️",
-  },
-  {
-    source: "Journal des Entreprises",
-    date: "Oct. 2023",
-    title: "Le Collectif Or du Commun se réinvente à Andolsheim",
-    url: "https://www.lejournaldesentreprises.com/alsace/article/le-collectif-or-du-commun-se-reinvente-a-andolsheim-735312",
-    icon: "📰",
-  },
-  {
-    source: "Tchapp Alsace",
-    date: "Mai 2021",
-    title: "Collectif Or du Commun Andolsheim",
-    url: "https://tchapp.fr/collectif-or-du-commun-andolsheim/",
-    icon: "🌐",
   },
 ];
 

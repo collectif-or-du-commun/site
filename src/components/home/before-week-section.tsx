@@ -9,7 +9,7 @@ const cards = [
   {
     icon: "🗓",
     title: "Tous les lundis, 9h–11h",
-    desc: "Venez quand vous voulez, sans rendez-vous. Le Before-Week a lieu chaque lundi matin en accès libre.",
+    desc: "Venez quand vous voulez, sans rendez-vous. Le Before-week a lieu chaque lundi matin en accès libre.",
     accent: "from-or/10 to-transparent",
     border: "hover:border-or/50",
   },
@@ -34,8 +34,8 @@ export function BeforeWeekSection() {
     <section className="bg-white py-14 lg:py-20">
       <div className="max-w-[1200px] mx-auto px-6">
         <SectionTitle
-          title="Le Before-Week"
-          subtitle="Chaque lundi matin de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Sans inscription, sans engagement."
+          title="Le Before-week"
+          subtitle="Le café-réseau pro du Collectif. Tous les lundis matin de 9h à 11h, on se réunit autour d'une compétence, d'un parcours inspirant ou d'une animation collective. Accès libre, sans inscription."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -99,7 +99,7 @@ export function BeforeWeekSection() {
             href="/espaces/before-week"
             className="group relative overflow-hidden inline-flex items-center gap-2 bg-or text-bleu-dark px-8 py-3.5 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(255,202,0,0.45)]"
           >
-            <span className="relative z-10">En savoir plus sur le Before-Week</span>
+            <span className="relative z-10">En savoir plus sur le Before-week</span>
             <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-300 group-hover:translate-x-0" />
           </Link>

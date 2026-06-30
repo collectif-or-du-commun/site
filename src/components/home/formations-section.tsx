@@ -7,34 +7,34 @@ import { ProgramCard } from "@/components/program-card";
 const programs = [
   {
     title: "Les Potenti'Elles",
-    badge: "Femmes",
-    badgeColor: "bg-orange/15 text-orange",
+    badge: "Reconversion",
+    badgeColor: "bg-or/20 text-bleu-dark",
     description:
-      "Formation numérique 360° pour femmes en reconversion ou recherche d'emploi. 12 semaines, 108h, accompagnement individuel inclus.",
+      "Pour les femmes en transition : se réinventer après un burn-out, une pause parentale, un arrêt long ou une fin de contrat. 85% d'insertion à 6 mois.",
     href: "/formations/potentielles",
   },
   {
     title: "ORizon LAB",
-    badge: "Numérique",
+    badge: "20-28 ans",
     badgeColor: "bg-bleu/15 text-bleu",
     description:
-      "Programme d'accompagnement professionnel pour les 20-28 ans. 7 semaines, 3 jours par semaine, 100€ reste à charge.",
+      "Pour les jeunes de 20 à 28 ans : trouver sa voie, clarifier son projet et expérimenter en conditions réelles. Ateliers, défis et mentorat.",
     href: "/formations/orizon-lab",
   },
   {
     title: "L'Campus",
-    badge: "Apprentissage",
+    badge: "Entrepreneuriat",
     badgeColor: "bg-or/20 text-bleu-dark",
     description:
-      "Parcours de montée en compétences pour porteurs de projet et créateurs d'activité.",
+      "Pour les femmes qui veulent explorer l'entrepreneuriat, renforcer leur leadership et oser passer à l'action. Codéveloppement et mentorat.",
     href: "/formations/lcampus",
   },
   {
     title: "S'entrApprendre",
-    badge: "Communauté",
+    badge: "Formateurs",
     badgeColor: "bg-bleu-dark/10 text-bleu-dark",
     description:
-      "Ateliers de co-apprentissage entre pairs. Développer ses compétences grâce à l'intelligence collective du groupe.",
+      "Un parcours complet de 12 modules pour transformer votre expertise en activité de formation rentable, reconnue et épanouissante.",
     href: "/formations/sentrapprendre",
   },
   {
@@ -50,7 +50,7 @@ const programs = [
     badge: "Membres",
     badgeColor: "bg-bleu/15 text-bleu",
     description:
-      "Sessions thématiques réservées aux membres Or du Commun. Pratiques, courtes, directement applicables.",
+      "Sessions thématiques réservées aux membres Or du commun. Pratiques, courtes, directement applicables.",
     href: "/formations/ateliers-adherents",
   },
 ];

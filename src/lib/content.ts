@@ -1,17 +1,28 @@
 // ═══════════════════════════════════════════════════════
-// FICHIER DE CONFIGURATION DU CONTENU
-// Modifiez ce fichier pour mettre à jour :
-//  - Le bandeau défilant (MARQUEE_ITEMS)
-//  - Les événements de l'agenda (EVENTS)
+// COUCHE DE CONTENU
+// Le contenu vit désormais dans des fichiers éditables par CMS (dossier /content) :
+//  - /content/site.json        → bandeau défilant + coordonnées
+//  - /content/agenda.json      → événements ponctuels de l'agenda
+//  - /content/before-week.json → réglage du Before-week récurrent
+//  - /content/reviews.json     → avis Google
+// Ce fichier ne fait que lire ces données et exposer l'API utilisée par les pages.
+// Ne pas remettre de contenu en dur ici : éditer les fichiers /content.
 // ═══════════════════════════════════════════════════════
 
-export const MARQUEE_ITEMS = [
-  "🎓 Certifié Qualiopi · Financement CPF et Pôle Emploi possible",
-  "🗓 Before-Week : tous les lundis 9h–11h, accès libre et gratuit",
-  "🌟 ORizon LAB · 20-28 ans · Prochaine session nov-déc 2026",
-  "📍 4 Grand'Rue, 68280 Andolsheim — à 10 min de Colmar",
-  "📞 07 55 53 08 57 · contact@collectiforducommun.org",
-];
+import site from "../../content/site.json";
+import agenda from "../../content/agenda.json";
+import beforeWeek from "../../content/before-week.json";
+import reviews from "../../content/reviews.json";
+
+export const MARQUEE_ITEMS: string[] = site.marquee;
+
+export interface ContactInfo {
+  adresse: string;
+  email: string;
+  telephone: string;
+  horaires: string;
+}
+export const CONTACT: ContactInfo = site.contact;
 
 export type EventCategory = "before-week" | "formation" | "evenement" | "atelier";
 
@@ -32,8 +43,12 @@ const MONTHS_FR = [
   "juillet","août","septembre","octobre","novembre","décembre",
 ];
 
-// Génère les Before-Week automatiquement depuis aujourd'hui
+// Génère les Before-week à partir du réglage /content/before-week.json :
+// tous les lundis, en sautant les dates de fermeture, si le réglage est actif.
 export function generateBeforeWeekEvents(count = 10): Event[] {
+  if (!beforeWeek.actif) return [];
+
+  const closed = new Set<string>(beforeWeek.fermetures ?? []);
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
@@ -44,84 +59,39 @@ export function generateBeforeWeekEvents(count = 10): Event[] {
   }
 
   const events: Event[] = [];
-  for (let i = 0; i < count; i++) {
+  let guard = 0;
+  while (events.length < count && guard < count * 4) {
+    guard++;
     const y = cursor.getFullYear();
     const m = String(cursor.getMonth() + 1).padStart(2, "0");
     const d = String(cursor.getDate()).padStart(2, "0");
     const dateStr = `${y}-${m}-${d}`;
-    const label = `${cursor.getDate()} ${MONTHS_FR[cursor.getMonth()]}`;
+    cursor.setDate(cursor.getDate() + 7);
+    if (closed.has(dateStr)) continue; // semaine de fermeture (vacances)
+    const label = `${parseInt(d, 10)} ${MONTHS_FR[parseInt(m, 10) - 1]}`;
     events.push({
       id: `before-week-${dateStr}`,
-      title: `Before-Week — ${label}`,
+      title: `Before-week — ${label}`,
       date: dateStr,
-      time: "9h–11h",
-      location: "4 Grand'Rue, 68280 Andolsheim",
+      time: beforeWeek.heure,
+      location: beforeWeek.lieu,
       category: "before-week",
-      description: "Chaque lundi de 9h à 11h, venez travailler gratuitement et rencontrer la communauté. Accès libre, sans inscription.",
+      description: beforeWeek.description,
     });
-    cursor.setDate(cursor.getDate() + 7);
   }
   return events;
 }
 
-// Événements statiques (hors Before-Week)
-const STATIC_EVENTS: Event[] = [
-  {
-    id: "potentielles-2026-04",
-    title: "Les Potenti'Elles — Session de printemps",
-    date: "2026-04-14",
-    time: "14h–17h",
-    location: "Salle de formation, Andolsheim",
-    category: "formation",
-    description: "Programme d'accompagnement entrepreneurial au féminin. Réunion d'information pour la prochaine cohorte.",
-    registrationUrl: "/contact",
-    spots: 12,
-  },
-  {
-    id: "fresque-energies-2026-04",
-    title: "Atelier Fresque des Énergies",
-    date: "2026-04-22",
-    time: "9h–12h30",
-    location: "Grande salle, Andolsheim",
-    category: "atelier",
-    description: "Atelier collaboratif pour comprendre les enjeux énergétiques de manière ludique et collective.",
-    registrationUrl: "/contact",
-    spots: 15,
-  },
-  {
-    id: "orizon-lab-info-2026-05",
-    title: "ORizon LAB — Réunion d'info",
-    date: "2026-05-12",
-    time: "18h–19h30",
-    location: "Collectif Or du Commun, Andolsheim",
-    category: "formation",
-    description: "Présentation du programme ORizon LAB pour les 20–28 ans en projet professionnel.",
-    registrationUrl: "/contact",
-    spots: 20,
-  },
-  {
-    id: "fete-communaute-2026-06",
-    title: "Fête de la communauté — Été 2026",
-    date: "2026-06-20",
-    time: "17h–22h",
-    location: "Jardin du Collectif, Andolsheim",
-    category: "evenement",
-    description: "La grande fête annuelle du Collectif ! Barbecue, musique live, et plein de surprises pour les membres et leurs familles.",
-    spots: 100,
-  },
-];
+const STATIC_EVENTS = agenda.events as Event[];
 
-// Exporte EVENTS pour compatibilité (= statiques seuls, sans Before-Week)
-export const EVENTS = STATIC_EVENTS;
+export const EVENTS: Event[] = STATIC_EVENTS;
 
-// Fusion statiques + Before-Week auto, triés par date
 export function getAllEvents(): Event[] {
   return [...STATIC_EVENTS, ...generateBeforeWeekEvents(10)].sort(
     (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
   );
 }
 
-// Helpers
 export function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
   return date.toLocaleDateString("fr-FR", {
@@ -141,7 +111,7 @@ export function formatDateShort(dateStr: string): string {
 }
 
 export const CATEGORY_LABELS: Record<EventCategory, string> = {
-  "before-week": "Before-Week",
+  "before-week": "Before-week",
   "formation": "Formation",
   "evenement": "Événement",
   "atelier": "Atelier",
@@ -154,18 +124,6 @@ export const CATEGORY_COLORS: Record<EventCategory, string> = {
   "atelier": "bg-bleu-dark/10 text-bleu-dark",
 };
 
-// ═══════════════════════════════════════════════════════
-// AVIS GOOGLE — À mettre à jour chaque semaine
-// Règles de priorité (priority) :
-//   10 = mots-clés top : coworking, formation, tiers-lieu, Potenti'Elles,
-//                        ORizon LAB, CPF, reconversion, accompagnement
-//    8 = location de salle, atelier, Before-Week, communauté, Andolsheim
-//    6 = avis positif générique sans mots-clés stratégiques
-//    4 = avis 4 étoiles ou contenant des réserves
-// Mettre à jour : GOOGLE_RATING, GOOGLE_REVIEW_COUNT, et le tableau GOOGLE_REVIEWS.
-// Les 6 premiers par ordre de priority décroissante sont affichés.
-// ═══════════════════════════════════════════════════════
-
 export interface GoogleReview {
   name: string;
   avatar: string;
@@ -176,53 +134,6 @@ export interface GoogleReview {
   priority: number; // plus élevé = affiché en premier
 }
 
-export const GOOGLE_RATING = 5.0;
-export const GOOGLE_REVIEW_COUNT = 129;
-
-export const GOOGLE_REVIEWS: GoogleReview[] = [
-  {
-    name: "Vincent Vauthier",
-    avatar: "VV",
-    avatarColor: "bg-bleu text-white",
-    rating: 5,
-    date: "il y a 2 ans",
-    text: "Or Du Commun est un espace de coworking. Un accueil chaleureux où l'écoute, l'entraide et la bienveillance sont des valeurs présentes dans ce lieu. On s'y sent bien et serein dès qu'on arrive. On y est fort bien accueilli. Un espace où on se sent chez soi, et en même temps ouvert sur de multiples champs des possibles ! On y rencontre des personnes aux profils très différents et disposées à l'échange et l'entraide. Un lieu dynamique, visionnaire et inspirant ouvert aux idées nouvelles.",
-    priority: 10,
-  },
-  {
-    name: "Sylvie Colin",
-    avatar: "SC",
-    avatarColor: "bg-or text-bleu-dark",
-    rating: 5,
-    date: "il y a 2 ans",
-    text: "Collectif que j'ai découvert grâce à mon amie Marine. Ravie de ce qu'il s'y passe, des interactions diverses et variées. On se sent moins seule quand on est dans une phase entrepreneuriale. J'encourage vivement toutes les personnes qui créent leur entreprise à venir y trouver un lieu chaleureux. Espace de coworking et de formation, d'échange et d'écoute de bonnes pratiques.",
-    priority: 10,
-  },
-  {
-    name: "Olivier Garrabé",
-    avatar: "OG",
-    avatarColor: "bg-bleu-dark text-white",
-    rating: 5,
-    date: "il y a un an",
-    text: "Je fréquente le collectif Or du Commun depuis quelques mois et je dois dire que je m'y sens accueilli par une équipe chaleureuse et professionnelle. Je me rends régulièrement aux Before Week du lundi matin, qui se trouve être un moment de rencontre, d'échange et d'animations thématiques, riches et ancrés dans les préoccupations actuelles. J'ai récemment utilisé les espaces de co-working : disponibles, fonctionnels et chaleureusement disposés. Sans oublier l'espace café, lieu de rencontre informel.",
-    priority: 10,
-  },
-  {
-    name: "Nathalie Bottemer",
-    avatar: "NB",
-    avatarColor: "bg-orange text-white",
-    rating: 5,
-    date: "il y a 2 ans",
-    text: "Je suis maintenant une habituée de ce magnifique lieu et surtout des superbes actions qui y sont proposées dans une ambiance bienveillante et chaleureuse. Une fois de plus cet après-midi a été très enrichissante grâce au \"guichet ouvert\", une nouveauté qui permet de rencontrer les acteurs de la création d'entreprise dans un cadre presque intimiste et rassurant, et permet d'échanger en toute sérénité. C'est toujours un plaisir de venir !",
-    priority: 10,
-  },
-  {
-    name: "Anne Schmitt Bourgeois",
-    avatar: "AS",
-    avatarColor: "bg-bleu text-white",
-    rating: 5,
-    date: "il y a 2 ans",
-    text: "Faire connaissance avec les personnes qui animent ou se retrouvent à Or du Commun m'apporte beaucoup de joie, de connaissances, de confiance, d'inspiration pour développer mon activité ! Je suis heureuse d'avoir osé découvrir ce lieu fabuleux et ressens une profonde gratitude envers chacune des belles âmes qui y partagent le meilleur d'elles-mêmes. On y trouve autant de compétences que de chaleur humaine authentique : c'est ça qui vaut de l'or à mes yeux.",
-    priority: 9,
-  },
-];
+export const GOOGLE_RATING: number = reviews.rating;
+export const GOOGLE_REVIEW_COUNT: number = reviews.count;
+export const GOOGLE_REVIEWS: GoogleReview[] = reviews.items as GoogleReview[];

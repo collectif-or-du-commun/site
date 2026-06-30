@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Location de salles",
   description:
-    "Louez nos salles à Andolsheim : salle de réunion (8 pers), grande salle (20 pers), espace coworking. Équipé, parking gratuit, à 10 min de Colmar.",
+    "Louez nos salles à Andolsheim : salle de réunion (8 pers), grande salle (50 pers), espace coworking. Équipé, parking gratuit, à 10 min de Colmar.",
   alternates: {
     canonical: "/location-salles",
   },
@@ -28,16 +28,16 @@ const espaces = [
     id: "salle-65",
     name: "Grande salle",
     subtitle: "65 m² · modulable",
-    capacity: "Jusqu'à 20 personnes",
-    image: "/images/atelier-jardinage.jpg",
-    alt: "Grande salle de formation Or du Commun",
+    capacity: "Jusqu'à 50 personnes",
+    image: "/images/grande-salle.jpg",
+    alt: "Grande salle de formation Or du commun",
     description:
-      "Deux salles de formation modulables et entièrement équipées. Configuration adaptable : cours, îlots, U ou théâtre. Parfaite pour formations, conférences et ateliers collectifs.",
+      "Une grande salle de formation modulable et entièrement équipée. Configuration adaptable : cours, îlots, U ou théâtre. Parfaite pour formations, conférences et ateliers collectifs.",
     tarifs: [
       { label: "Demi-journée", prix: "200 €", note: "adhérents : 90 €" },
       { label: "Journée complète", prix: "350 €", note: "adhérents : 150 €" },
     ],
-    equipements: ["Vidéoprojecteur", "WiFi fibre", "Tables modulables", "Entièrement équipée"],
+    equipements: ["Vidéoprojecteur", "Tables modulables", "Configuration U / théâtre"],
     color: "bg-bleu-dark",
   },
   {
@@ -45,15 +45,15 @@ const espaces = [
     name: "Salle de réunion",
     subtitle: "30 m² · lumière naturelle",
     capacity: "Jusqu'à 8–10 personnes",
-    image: "/images/coworking-membre.jpg",
-    alt: "Salle de réunion Or du Commun",
+    image: "/images/espace-cuisine.jpg",
+    alt: "Salle de réunion Or du commun",
     description:
       "Idéale pour les réunions, entretiens, workshops en petit groupe ou formations restreintes. Modulable, lumière naturelle, entièrement équipée.",
     tarifs: [
       { label: "Demi-journée", prix: "150 €", note: "adhérents : 50 €" },
       { label: "Journée complète", prix: "250 €", note: "adhérents : 80 €" },
     ],
-    equipements: ["Vidéoprojecteur", "WiFi fibre", "Tableau blanc", "Modulable"],
+    equipements: ["Vidéoprojecteur", "Tableau blanc", "Lumière naturelle"],
     color: "bg-bleu",
   },
   {
@@ -61,15 +61,15 @@ const espaces = [
     name: "Bureau individuel",
     subtitle: "10 m² · privatisable",
     capacity: "1 à 2 personnes",
-    image: "/images/espace-cuisine.jpg",
-    alt: "Bureau individuel Or du Commun",
+    image: "/images/coworking-membre.jpg",
+    alt: "Bureau individuel Or du commun",
     description:
       "Un bureau privatisable pour travailler au calme, recevoir un client ou tenir un entretien. Accès à la cuisine partagée et au jardin. Idéal pour les indépendants.",
     tarifs: [
       { label: "À l'heure", prix: "20 €", note: "adhérents : 10 €" },
       { label: "Journée complète", prix: "130 €", note: "" },
     ],
-    equipements: ["WiFi fibre", "Cuisine partagée", "Jardin", "Accès imprimante"],
+    equipements: ["Cuisine partagée", "Jardin", "Au calme"],
     color: "bg-orange",
   },
 ];
@@ -109,7 +109,7 @@ export default function LocationSallesPage() {
                 postes de coworking. 4 Grand'rue, Andolsheim, à 10 min de Colmar.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                {["📍 4 Grand'rue, Andolsheim", "🚗 Parking gratuit", "👥 1 à 20 personnes"].map((pill) => (
+                {["📍 4 Grand'rue, Andolsheim", "🚗 Parking gratuit", "👥 1 à 50 personnes"].map((pill) => (
                   <span
                     key={pill}
                     className="rounded-full bg-white/15 px-4 py-2 text-sm font-medium text-white"
@@ -137,7 +137,7 @@ export default function LocationSallesPage() {
             <div className="relative hidden lg:block">
               <Image
                 src="/images/coaching-trio.jpg"
-                alt="Salles Or du Commun Andolsheim"
+                alt="Salles Or du commun Andolsheim"
                 width={580}
                 height={400}
                 className="rounded-2xl shadow-2xl object-cover w-full"
@@ -174,7 +174,7 @@ export default function LocationSallesPage() {
                     src={espace.image}
                     alt={espace.alt}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                   <span className={`absolute bottom-4 left-4 rounded-xl ${espace.color} px-4 py-2 text-sm font-bold text-white`}>
@@ -285,7 +285,7 @@ export default function LocationSallesPage() {
             <div>
               <Image
                 src="/images/evenement-odc.jpg"
-                alt="Espace coworking Or du Commun Andolsheim"
+                alt="Espace coworking Or du commun Andolsheim"
                 width={560}
                 height={400}
                 className="rounded-2xl shadow-lg w-full object-cover"
@@ -332,16 +332,16 @@ export default function LocationSallesPage() {
           </div>
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 auto-rows-[180px]">
             <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
-              <Image src="/images/atelier-couleurs.jpg" alt="Salle de réunion" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/galerie-atelier.jpg" alt="Salle de réunion" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden relative">
-              <Image src="/images/atelier-vert.jpg" alt="Grande salle" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/galerie-coeur.jpg" alt="Grande salle" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-2xl overflow-hidden relative">
-              <Image src="/images/equipe-exterieur.jpg" alt="Espace commun" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/equipe-exterieur.jpg" alt="Espace commun" fill className="object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="col-span-2 rounded-2xl overflow-hidden relative">
-              <Image src="/images/fete-communaute.jpg" alt="Événement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/galerie-soiree.jpg" alt="Événement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { id: "avant-apres", label: "Avant / Après" },
   { id: "vitesse", label: "Vitesse" },
   { id: "google", label: "Google" },
+  { id: "referencement", label: "Référencement" },
   { id: "contenu", label: "Contenu" },
   { id: "plan", label: "Plan d'action" },
 ];

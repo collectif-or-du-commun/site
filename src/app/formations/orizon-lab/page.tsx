@@ -88,7 +88,7 @@ export default function OrizonLabPage() {
             <div className="relative">
               <Image
                 src="/images/formation-binome.jpg"
-                alt="Séance ORizon LAB — accompagnement numérique"
+                alt="Séance ORizon LAB — orientation des jeunes 20-28 ans"
                 width={580}
                 height={420}
                 className="rounded-2xl shadow-xl w-full object-cover"

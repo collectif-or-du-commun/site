@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Nos prestations",
   description:
-    "Ateliers et accompagnements du Collectif Or du Commun : Fresque des Énergies (3h, 6-25 personnes) et Voyage d'un héros (demi-journée). Andolsheim, Alsace.",
+    "Ateliers et accompagnements du Collectif Or du commun : Fresque des Énergies (3h, 6-25 personnes) et Voyage d'un héros (demi-journée). Andolsheim, Alsace.",
   alternates: {
     canonical: "/prestations",
   },
@@ -46,10 +46,10 @@ export default function PrestationsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
               <div className="relative h-56 w-full">
                 <Image
-                  src="/images/atelier-couleurs.jpg"
+                  src="/images/fresque-atelier.jpg"
                   alt="Atelier Fresque des Énergies"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="p-8">
@@ -84,10 +84,10 @@ export default function PrestationsPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
               <div className="relative h-56 w-full">
                 <Image
-                  src="/images/coaching-trio.jpg"
+                  src="/images/prestation-trio.jpg"
                   alt="Accompagnement Voyage d'un héros"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="p-8">

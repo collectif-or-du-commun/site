@@ -29,7 +29,7 @@ const espaces = [
     href: "/espaces/nos-locaux",
   },
   {
-    img: "/images/formation-coaching.jpg",
+    img: "/images/lcampus-groupe.jpg",
     alt: "Salles de formation modulables",
     title: "Salles de formation",
     desc: "2 salles modulables de 30 m² et 65 m² pour ateliers, formations et réunions. Vidéoprojecteur, paperboard, mobilier adaptable.",
@@ -78,17 +78,17 @@ export default function EspacesPage() {
                 Un espace de travail vivant et humain
               </h2>
               <p className="text-gris mt-4 leading-relaxed">
-                Le Collectif Or du Commun est bien plus qu&apos;un espace de coworking. C&apos;est une communauté de freelances, entrepreneurs, porteurs de projets et formateurs qui partagent un lieu de travail, mais aussi une dynamique collective.
+                Le Collectif Or du commun est bien plus qu&apos;un espace de coworking. C&apos;est une communauté de freelances, entrepreneurs, porteurs de projets et formateurs qui partagent un lieu de travail, mais aussi une dynamique collective.
               </p>
               <p className="text-gris mt-3 leading-relaxed">
-                Implanté à Andolsheim depuis 2018, à 10 minutes de Colmar et 30 minutes de Mulhouse, le tiers-lieu accueille plus de 200 membres actifs. L&apos;adhésion individuelle est à 45 €/an et ouvre droit à des tarifs préférentiels sur tous les espaces.
+                Implanté à Andolsheim depuis 2018, à 10 minutes de Colmar et 30 minutes de Mulhouse, le tiers-lieu accueille plus de 140 membres. L&apos;adhésion individuelle est à 45 €/an et ouvre droit à des tarifs préférentiels sur tous les espaces.
               </p>
               <ul className="mt-6 space-y-3">
                 {[
                   "Accès libre ou sur abonnement mensuel",
                   "Atmosphère bienveillante et stimulante",
-                  "Communauté de 200+ professionnels actifs",
-                  "Locaux accessibles PMR, parking sur place",
+                  "Communauté de 140 professionnels",
+                  "Parking gratuit sur place",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle className="text-or shrink-0" size={20} />
@@ -101,7 +101,7 @@ export default function EspacesPage() {
             <div>
               <Image
                 src="/images/equipe-fenetre.jpg"
-                alt="Membres du Collectif Or du Commun"
+                alt="Membres du Collectif Or du commun"
                 width={600}
                 height={450}
                 className="rounded-2xl shadow-lg w-full h-auto object-cover"
@@ -149,7 +149,7 @@ export default function EspacesPage() {
                     src={espace.img}
                     alt={espace.alt}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="p-6">
@@ -173,7 +173,7 @@ export default function EspacesPage() {
       {/* Tarifs résumés */}
       <section className="bg-fond py-16">
         <div className="mx-auto max-w-[1200px] px-6">
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl bg-white border border-gray-100 p-6">
               <p className="text-xs font-semibold uppercase tracking-wider text-or mb-2">Coworking</p>
               <p className="font-playfair text-2xl font-bold text-bleu">85 €</p>
@@ -187,7 +187,12 @@ export default function EspacesPage() {
             <div className="rounded-2xl bg-white border border-gray-100 p-6">
               <p className="text-xs font-semibold uppercase tracking-wider text-or mb-2">Grande salle 65 m²</p>
               <p className="font-playfair text-2xl font-bold text-bleu">200 €</p>
-              <p className="text-sm text-gris mt-1">Demi-journée. Jusqu&apos;à 20 personnes. Adhérents : 90 €.</p>
+              <p className="text-sm text-gris mt-1">Demi-journée. Jusqu&apos;à 50 personnes. Adhérents : 90 €.</p>
+            </div>
+            <div className="rounded-2xl bg-white border border-gray-100 p-6">
+              <p className="text-xs font-semibold uppercase tracking-wider text-or mb-2">Bureau individuel 10 m²</p>
+              <p className="font-playfair text-2xl font-bold text-bleu">20 €</p>
+              <p className="text-sm text-gris mt-1">À l&apos;heure. 1 à 2 personnes. Journée : 130 €. Adhérents : 10 €/h.</p>
             </div>
           </div>
           <p className="text-center mt-6 text-xs text-gris">

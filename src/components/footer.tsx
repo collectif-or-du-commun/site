@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { MapPin, Mail, Phone, Clock } from "lucide-react"
+import { CONTACT } from "@/lib/content"
 
 const navigationLinks = [
   { label: "Accueil", href: "/" },
@@ -19,10 +20,10 @@ const formationLinks = [
 ]
 
 const contactInfo = [
-  { icon: MapPin, text: "4 Grand'Rue, 68280 Andolsheim (Haut-Rhin)" },
-  { icon: Mail, text: "contact@collectiforducommun.org" },
-  { icon: Phone, text: "07 55 53 08 57" },
-  { icon: Clock, text: "Lun-Ven : 8h-18h" },
+  { icon: MapPin, text: CONTACT.adresse },
+  { icon: Mail, text: CONTACT.email },
+  { icon: Phone, text: CONTACT.telephone },
+  { icon: Clock, text: CONTACT.horaires },
 ]
 
 function FacebookIcon() {
@@ -66,10 +67,10 @@ export function Footer() {
           {/* Col 1: Logo + tagline + socials */}
           <div>
             <Link href="/" className="font-playfair text-2xl font-bold text-or">
-              Collectif Or du Commun
+              Collectif Or du commun
             </Link>
             <p className="mt-3 text-sm text-white/70">
-              Tiers-lieu associatif à Andolsheim, Alsace
+              Tiers-lieu associatif à Andolsheim, Alsace · Grand Est
             </p>
             <div className="mt-5 flex gap-3">
               {socialLinks.map((social) => (
@@ -131,13 +132,16 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6">
-          <p className="text-sm text-white/50">&copy; 2026 Collectif Or du Commun</p>
+          <p className="text-sm text-white/50">&copy; 2026 Collectif Or du commun</p>
           <div className="flex gap-6">
             <Link href="/mentions-legales" className="text-sm text-white/50 transition hover:text-or">
               Mentions légales
             </Link>
             <Link href="/cgu" className="text-sm text-white/50 transition hover:text-or">
               CGU
+            </Link>
+            <Link href="/comparatif" className="text-sm text-white/50 transition hover:text-or">
+              Rapport SEO
             </Link>
           </div>
         </div>

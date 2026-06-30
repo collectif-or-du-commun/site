@@ -1,0 +1,51 @@
+{
+  "rating": 5.0,
+  "count": 129,
+  "items": [
+    {
+      "name": "Vincent Vauthier",
+      "avatar": "VV",
+      "avatarColor": "bg-bleu text-white",
+      "rating": 5,
+      "date": "il y a 2 ans",
+      "text": "Or du commun est un espace de coworking. Un accueil chaleureux où l'écoute, l'entraide et la bienveillance sont des valeurs présentes dans ce lieu. On s'y sent bien et serein dès qu'on arrive.",
+      "priority": 10
+    },
+    {
+      "name": "Anne Schmitt Bourgeois",
+      "avatar": "AS",
+      "avatarColor": "bg-or text-bleu-dark",
+      "rating": 5,
+      "date": "il y a 2 ans",
+      "text": "Faire connaissance avec les personnes qui animent ou se retrouvent à Or du commun m'apporte beaucoup de joie, de connaissances, de confiance, d'inspiration pour développer mon activité !",
+      "priority": 9
+    },
+    {
+      "name": "Olivier Garrabé",
+      "avatar": "OG",
+      "avatarColor": "bg-bleu-dark text-white",
+      "rating": 5,
+      "date": "il y a 10 mois",
+      "text": "Je fréquente le collectif Or du commun depuis quelques mois et je m'y sens accueilli par une équipe chaleureuse et professionnelle. Je me rends régulièrement aux Before-week du lundi matin.",
+      "priority": 9
+    },
+    {
+      "name": "Sylvie Colin",
+      "avatar": "SC",
+      "avatarColor": "bg-orange text-white",
+      "rating": 5,
+      "date": "il y a 2 ans",
+      "text": "Collectif que j'ai découvert grâce à mon amie Marine. Ravie de ce qu'il s'y passe, des interactions diverses et variées. On se sent moins seule quand on est dans une phase entrepreneuriale.",
+      "priority": 8
+    },
+    {
+      "name": "Nathalie Bottemer",
+      "avatar": "NB",
+      "avatarColor": "bg-bleu text-white",
+      "rating": 5,
+      "date": "il y a 2 ans",
+      "text": "Je suis maintenant une habituée de ce magnifique lieu et surtout des superbes actions qui y sont proposées dans une ambiance bienveillante et chaleureuse.",
+      "priority": 6
+    }
+  ]
+}

@@ -47,7 +47,7 @@ export function HeroSection() {
           <div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <span className="inline-block rounded-full bg-or/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bleu">
-                Tiers-lieu associatif · Andolsheim, Alsace
+                Andolsheim · Alsace · Grand Est
               </span>
             </motion.div>
 
@@ -99,25 +99,6 @@ export function HeroSection() {
                 Voir les formations
               </Link>
             </motion.div>
-
-            {/* Stats inline */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-10 flex gap-8 border-t border-gray-100 pt-8"
-            >
-              {[
-                { value: "200+", label: "membres actifs" },
-                { value: "2018", label: "fondé en" },
-                { value: "6", label: "programmes" },
-              ].map((s) => (
-                <div key={s.label}>
-                  <div className="font-playfair text-2xl font-bold text-bleu">{s.value}</div>
-                  <div className="text-xs uppercase tracking-wide text-gris">{s.label}</div>
-                </div>
-              ))}
-            </motion.div>
           </div>
 
           {/* Colonne droite — tilt 3D au survol */}
@@ -134,7 +115,7 @@ export function HeroSection() {
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <Image
                 src="/images/before-week-event.jpg"
-                alt="Communauté du Collectif Or du Commun"
+                alt="Communauté du Collectif Or du commun"
                 width={600}
                 height={450}
                 className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -151,7 +132,7 @@ export function HeroSection() {
             >
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-or/15 text-xl">🤝</div>
               <div>
-                <div className="text-sm font-bold text-bleu-dark">200+ membres</div>
+                <div className="text-sm font-bold text-bleu-dark">140 membres</div>
                 <div className="text-xs text-gris">communauté active</div>
               </div>
             </motion.div>

@@ -95,7 +95,7 @@ export default function FresqueEnergiesPage() {
           {/* Right: image */}
           <div className="relative w-full h-80 lg:h-[380px]">
             <Image
-              src="/images/atelier-couleurs.jpg"
+              src="/images/fresque-detail.jpg"
               alt="Atelier Fresque des Énergies en action"
               fill
               className="object-cover rounded-2xl shadow-lg"

@@ -4,7 +4,7 @@ import { ContactClient } from "./ContactClient";
 export const metadata: Metadata = {
   title: "Nous contacter",
   description:
-    "Contactez le Collectif Or du Commun pour visiter nos espaces, vous inscrire à une formation ou en savoir plus.",
+    "Contactez le Collectif Or du commun pour visiter nos espaces, vous inscrire à une formation ou en savoir plus.",
   alternates: {
     canonical: "/contact",
   },

@@ -92,7 +92,7 @@ export default function VoyageHerosPage() {
           {/* Right: image */}
           <div className="relative w-full h-80 lg:h-[380px]">
             <Image
-              src="/images/coaching-trio.jpg"
+              src="/images/voyage-heros.jpg"
               alt="Accompagnement Voyage d'un héros"
               fill
               className="object-cover rounded-2xl shadow-lg"

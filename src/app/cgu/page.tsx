@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Conditions générales d'utilisation",
-  description: "Conditions générales d'utilisation du site du Collectif Or du Commun.",
+  description: "Conditions générales d'utilisation du site du Collectif Or du commun.",
   alternates: {
     canonical: "/cgu",
   },
@@ -25,14 +25,14 @@ export default function CguPage() {
           <div>
             <h2 className="font-playfair text-2xl font-bold text-bleu mb-4">Objet</h2>
             <p>
-              Les présentes conditions générales d&apos;utilisation régissent l&apos;accès et l&apos;utilisation du site internet du Collectif Or du Commun, accessible à l&apos;adresse <strong className="text-bleu-dark">odc.vjacquet.fr</strong>. En accédant à ce site, vous acceptez sans réserve les présentes CGU.
+              Les présentes conditions générales d&apos;utilisation régissent l&apos;accès et l&apos;utilisation du site internet du Collectif Or du commun, accessible à l&apos;adresse <strong className="text-bleu-dark">odc.vjacquet.fr</strong>. En accédant à ce site, vous acceptez sans réserve les présentes CGU.
             </p>
           </div>
 
           <div>
             <h2 className="font-playfair text-2xl font-bold text-bleu mb-4">Accès au site</h2>
             <p>
-              L&apos;accès au site est gratuit et ouvert à tout utilisateur disposant d&apos;un accès à internet. Le Collectif Or du Commun se réserve le droit de modifier, suspendre ou interrompre l&apos;accès au site à tout moment, sans préavis.
+              L&apos;accès au site est gratuit et ouvert à tout utilisateur disposant d&apos;un accès à internet. Le Collectif Or du commun se réserve le droit de modifier, suspendre ou interrompre l&apos;accès au site à tout moment, sans préavis.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function CguPage() {
           <div>
             <h2 className="font-playfair text-2xl font-bold text-bleu mb-4">Responsabilité</h2>
             <p>
-              Le Collectif Or du Commun s&apos;efforce de maintenir les informations publiées sur le site aussi précises et à jour que possible. Cependant, il ne peut garantir l&apos;exactitude, la complétude ou l&apos;actualité des informations diffusées. L&apos;utilisation des informations disponibles sur le site se fait sous la seule responsabilité de l&apos;utilisateur.
+              Le Collectif Or du commun s&apos;efforce de maintenir les informations publiées sur le site aussi précises et à jour que possible. Cependant, il ne peut garantir l&apos;exactitude, la complétude ou l&apos;actualité des informations diffusées. L&apos;utilisation des informations disponibles sur le site se fait sous la seule responsabilité de l&apos;utilisateur.
             </p>
           </div>
 
