@@ -75,7 +75,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 max-w-lg text-lg leading-relaxed text-gris"
             >
-              Rejoignez une communauté de porteurs de projets, travailleurs indépendants et entrepreneurs. Un espace de vie, de travail et d&apos;apprentissage au cœur de l&apos;Alsace.
+              Un espace où les parcours se réinventent, où les compétences se partagent et où chacun avance, entouré d&apos;une communauté engagée au cœur du Haut-Rhin depuis 2018.
             </motion.p>
 
             <motion.div

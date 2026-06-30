@@ -24,7 +24,7 @@ export function ADNSection() {
             1 lieu, 1001 possibilités
           </span>
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-[44px] font-bold text-bleu leading-tight">
-            Un tiers-lieu à taille humaine
+            Un tiers-lieu humain au cœur du Haut-Rhin
           </h2>
         </motion.div>
 
