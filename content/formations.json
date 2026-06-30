@@ -1,0 +1,672 @@
+[
+  {
+    "slug": "potentielles",
+    "metaTitle": "Les Potenti'Elles : formation femmes en transition",
+    "metaDescription": "Un accompagnement pour les femmes en transition professionnelle à Andolsheim. Reprendre confiance, clarifier son projet et avancer en collectif avec le Collectif Or du commun.",
+    "heroColor": "bg-bleu-dark",
+    "heroImage": "/images/potentielles-groupe.jpg",
+    "hero": {
+      "eyebrow": "Femmes · Transition professionnelle · Andolsheim",
+      "titre": "Les Potenti'Elles",
+      "accroche": "Un accompagnement de 6 semaines pour les femmes en transition professionnelle, pour retrouver confiance, clarifier son projet, créer du lien et ouvrir de nouvelles perspectives.",
+      "faits": [
+        "6 semaines",
+        "Pour les femmes en transition pro",
+        "À Andolsheim (Haut-Rhin)"
+      ]
+    },
+    "pourQui": [
+      {
+        "titre": "Vous faites face à la fin d'un contrat",
+        "desc": "Licenciement, fin de CDD, rupture conventionnelle. Vous cherchez à rebondir et à vous repositionner sur le marché du travail."
+      },
+      {
+        "titre": "Vous sortez d'un burn-out",
+        "desc": "Après un épuisement professionnel, vous avez besoin de reprendre à un rythme adapté et de redéfinir vos priorités."
+      },
+      {
+        "titre": "Vous revenez d'un congé parental",
+        "desc": "Vous avez mis votre carrière en pause pour votre famille et vous souhaitez aujourd'hui reprendre le chemin du travail avec confiance."
+      },
+      {
+        "titre": "Vous reprenez après un arrêt long",
+        "desc": "Maladie, accident de vie, arrêt prolongé. Vous êtes prête à vous remobiliser et à construire un projet qui vous ressemble."
+      },
+      {
+        "titre": "Besoins spécifiques ou situation de handicap",
+        "desc": "Chaque situation est étudiée pour adapter le parcours. Contactez l'équipe pour en discuter avant de vous inscrire."
+      }
+    ],
+    "programme": [
+      {
+        "titre": "Valoriser ses compétences",
+        "desc": "Identifier et mettre en avant ses compétences transférables, y compris celles acquises hors du cadre salarié."
+      },
+      {
+        "titre": "Apprivoiser le numérique",
+        "desc": "Prendre en main les outils numériques pour valoriser son profil et construire son identité professionnelle en ligne."
+      },
+      {
+        "titre": "Gérer le stress et reprendre confiance",
+        "desc": "Un travail sur la gestion du stress, l'image de soi et la prise de parole, avec des temps de dynamisation et de ressourcement."
+      },
+      {
+        "titre": "Préparer le retour à l'emploi",
+        "desc": "Préparation aux entretiens d'embauche et découverte des dispositifs emploi et création d'entreprise."
+      },
+      {
+        "titre": "Vivre une immersion en entreprise",
+        "desc": "Une période d'immersion sur le terrain, en conditions réelles, suivie d'une analyse de pratiques en groupe."
+      },
+      {
+        "titre": "Avancer en collectif",
+        "desc": "Master-classes avec des professionnels, mentorat personnalisé et accompagnement individuel tout au long du parcours, portés par un groupe de pairs."
+      }
+    ],
+    "resultats": [],
+    "infos": [
+      {
+        "label": "Durée",
+        "valeur": "6 semaines"
+      },
+      {
+        "label": "Public",
+        "valeur": "Femmes en transition professionnelle"
+      },
+      {
+        "label": "Lieu",
+        "valeur": "Andolsheim (Haut-Rhin)"
+      },
+      {
+        "label": "Modalités",
+        "valeur": "Formation, mentorat et immersion en entreprise"
+      },
+      {
+        "label": "Sélection",
+        "valeur": "Participation confirmée après un entretien individuel avec l'équipe"
+      },
+      {
+        "label": "Accessibilité",
+        "valeur": "Parcours adapté aux besoins spécifiques et aux situations de handicap"
+      }
+    ],
+    "temoignage": {
+      "citation": "Un parcours qui donne des ailes, met en confiance et dynamise pour aller vers un avenir professionnel qui nous correspond. Nous étions épaulées par un groupe de pairs et de super formateurs. Je recommande de tout cœur.",
+      "auteur": "Une participante Potenti'Elles"
+    },
+    "cta": {
+      "titre": "Prête à vous lancer ?",
+      "texte": "Contactez le Collectif Or du commun pour connaître les dates de la prochaine session et vérifier votre éligibilité. Un entretien individuel permet de faire connaissance et de valider votre place dans le groupe."
+    }
+  },
+  {
+    "slug": "orizon-lab",
+    "metaTitle": "ORizon LAB - Trouver sa voie pro de 20 à 28 ans",
+    "metaDescription": "ORizon LAB du Collectif Or du commun à Andolsheim : 7 semaines pour les 20-28 ans qui veulent clarifier leur projet pro, avec immersion en entreprise et mentorat.",
+    "heroColor": "bg-bleu-dark",
+    "heroImage": "/images/formation-binome.jpg",
+    "hero": {
+      "eyebrow": "Jeunes 20-28 ans · Projet pro · Andolsheim",
+      "titre": "ORizon LAB, expérimente ton avenir",
+      "accroche": "Un programme dynamique où chacun fait le point sur son projet professionnel. Mieux se connaître, explorer de nouvelles pistes et construire un vrai plan d'action, entouré d'un groupe qui avance avec toi.",
+      "faits": [
+        "Jeunes de 20 à 28 ans",
+        "7 semaines, 3 jours/semaine",
+        "Aucun diplôme requis",
+        "35 h d'immersion en entreprise",
+        "À Andolsheim, Haut-Rhin"
+      ]
+    },
+    "pourQui": [
+      {
+        "titre": "Tu as entre 20 et 28 ans",
+        "desc": "ORizon LAB s'adresse aux jeunes qui veulent y voir plus clair sur leur direction professionnelle."
+      },
+      {
+        "titre": "Tu cherches ta voie",
+        "desc": "Tu veux clarifier ton projet pro sans savoir encore exactement où tu veux aller, et tu es prêt à explorer."
+      },
+      {
+        "titre": "Tu préfères apprendre en faisant",
+        "desc": "Tu veux relever des défis, te confronter au réel et construire quelque chose de concret plutôt que rester sur la théorie."
+      },
+      {
+        "titre": "Tu vises l'emploi ou un projet",
+        "desc": "Tu cherches activement du travail ou tu envisages de te lancer, et tu veux une méthode pour y arriver."
+      },
+      {
+        "titre": "Tu n'as pas de diplôme et c'est ok",
+        "desc": "Aucun prérequis académique. Ta participation se confirme après un simple entretien individuel avec l'équipe."
+      }
+    ],
+    "programme": [
+      {
+        "titre": "Se connaître et se repérer",
+        "desc": "Explorer tes talents, tes envies et tes freins. Le point de départ pour faire des choix qui te ressemblent."
+      },
+      {
+        "titre": "Explorer les métiers",
+        "desc": "Découvrir des métiers et des secteurs à travers des rencontres avec des professionnels qui partagent leur quotidien."
+      },
+      {
+        "titre": "Construire son parcours",
+        "desc": "Bâtir un plan d'action réaliste, apprendre à pitcher son projet et préparer la suite étape par étape."
+      },
+      {
+        "titre": "Communiquer et pitcher",
+        "desc": "Apprendre à parler de soi, de son projet et de ses envies. Travailler son identité numérique et ses réseaux sociaux professionnels."
+      },
+      {
+        "titre": "Aller sur le terrain",
+        "desc": "35 heures d'immersion en entreprise et une mission collective pour tester un métier, une équipe, un environnement, et confirmer ses choix."
+      },
+      {
+        "titre": "Se préparer aux entretiens",
+        "desc": "Des mises en situation réelles pour travailler sa posture, ses réponses et sa confiance face aux recruteurs."
+      },
+      {
+        "titre": "Être accompagné par un mentor",
+        "desc": "Un mentor qui connaît le terrain reste à tes côtés tout au long du parcours, là pour toi quand tu en as besoin."
+      }
+    ],
+    "resultats": [],
+    "infos": [
+      {
+        "label": "Public",
+        "valeur": "Jeunes de 20 à 28 ans, aucun diplôme requis"
+      },
+      {
+        "label": "Durée",
+        "valeur": "7 semaines, 3 jours/semaine (lundi, mardi, jeudi), de 8h50 à 16h"
+      },
+      {
+        "label": "Immersion",
+        "valeur": "35 heures d'immersion en entreprise et une mission collective"
+      },
+      {
+        "label": "Groupe",
+        "valeur": "6 à 10 participants"
+      },
+      {
+        "label": "Dates",
+        "valeur": "Du 9 novembre au 10 décembre 2026 (à confirmer pour la session en cours)"
+      },
+      {
+        "label": "Lieu",
+        "valeur": "4 Grand'rue, 68280 Andolsheim (Haut-Rhin)"
+      },
+      {
+        "label": "Coût",
+        "valeur": "100€ de reste à charge + 45€ d'adhésion annuelle à l'association"
+      },
+      {
+        "label": "Inscription",
+        "valeur": "Participation confirmée après un entretien individuel avec l'équipe"
+      }
+    ],
+    "temoignage": {
+      "citation": "Aucun diplôme requis. Seule ta motivation pour construire ton avenir compte. Tu apprends en faisant, tu relèves des défis et tu construis ton avenir comme un vrai projet.",
+      "auteur": "Esprit du programme ORizon LAB, Collectif Or du commun"
+    },
+    "cta": {
+      "titre": "Prêt à te lancer ?",
+      "texte": "Écris-nous pour en parler. Un entretien individuel suffit pour rejoindre la prochaine session d'ORizon LAB et commencer à dessiner ton plan d'action."
+    }
+  },
+  {
+    "slug": "lcampus",
+    "metaTitle": "L'Campus : entreprendre au féminin en Alsace",
+    "metaDescription": "L'Campus, le parcours du Collectif Or du commun pour les femmes qui veulent entreprendre, renforcer leur leadership et passer à l'action. Mars à juillet 2026.",
+    "heroColor": "bg-bleu",
+    "heroImage": "/images/lcampus-visite.jpg",
+    "hero": {
+      "eyebrow": "Femmes · Leadership · Entrepreneuriat · Mars à juillet 2026",
+      "titre": "L'Campus, entreprendre sa vie pour demain",
+      "accroche": "Un parcours au féminin pour les femmes qui veulent explorer l'entrepreneuriat, renforcer leur leadership et oser passer à l'action, dans un cadre collectif et bienveillant.",
+      "faits": [
+        "Parcours de mars à juillet 2026",
+        "7 master-classes + 8 séances de codéveloppement",
+        "8 participantes maximum",
+        "600 € de reste à charge"
+      ]
+    },
+    "pourQui": [
+      {
+        "titre": "Vous êtes entrepreneuse, ou en train de le devenir",
+        "desc": "Vous portez un projet, une activité, ou simplement l'envie de vous lancer à votre compte. L'Campus vous donne un cadre pour avancer."
+      },
+      {
+        "titre": "Vous voulez affirmer votre leadership",
+        "desc": "Vous cherchez à gagner en confiance, en légitimité et en impact, et à prendre pleinement votre place de cheffe d'entreprise ou de professionnelle."
+      },
+      {
+        "titre": "Vous menez un projet en parallèle d'une activité",
+        "desc": "Salariée ou déjà en activité, vous voulez faire grandir un projet entrepreneurial. Le parcours reste compatible avec votre quotidien professionnel."
+      },
+      {
+        "titre": "Vous cherchez du sens et de l'équilibre",
+        "desc": "Vous voulez concilier ambition, valeurs et réalités de vie, et avancer sereinement en tenant compte de vos contraintes familiales, financières et professionnelles."
+      },
+      {
+        "titre": "Vous voulez vous appuyer sur un collectif",
+        "desc": "Vous avancez mieux entourée. L'Campus réunit un petit groupe de pairs et des mentors pour ne plus avancer seule."
+      }
+    ],
+    "programme": [
+      {
+        "titre": "Déployer sa posture entrepreneuriale",
+        "desc": "Développer votre posture de cheffe d'entreprise, affirmer votre place et votre légitimité, et donner un nouveau sens à vos expériences passées pour en faire un tremplin."
+      },
+      {
+        "titre": "Révéler et renforcer son leadership",
+        "desc": "Identifier ce qui fait votre force unique, vous émanciper de vos freins (l'argent, l'image, le temps, les valeurs) et avancer avec confiance."
+      },
+      {
+        "titre": "Développer son réseau et sa visibilité",
+        "desc": "Apprendre à parler de ce que vous faites, vous rendre visible auprès des bons interlocuteurs et construire des liens durables entre pairs."
+      },
+      {
+        "titre": "Concilier performance et équilibre",
+        "desc": "Trouver le rythme juste entre ambition professionnelle et réalités personnelles, pour avancer sans vous épuiser."
+      },
+      {
+        "titre": "7 master-classes collectives",
+        "desc": "Un vendredi matin toutes les trois semaines, de 8h45 à 13h30, dans les locaux du Collectif ou chez nos partenaires (la Forge d'Eschbach-au-Val, l'Écurie de Widensolen...)."
+      },
+      {
+        "titre": "8 séances de codéveloppement",
+        "desc": "Un mardi toutes les trois semaines, de 12h à 15h, autour d'un repas partagé, pour réfléchir ensemble et trouver des solutions concrètes."
+      },
+      {
+        "titre": "Un mentorat individuel",
+        "desc": "Un accompagnement personnalisé par une dirigeante d'entreprise, pour avancer sur votre projet avec un regard expert et bienveillant."
+      },
+      {
+        "titre": "Des expériences hors du commun",
+        "desc": "Forger sa détermination à la Forge d'art, affirmer son leadership en équicoaching avec le cheval comme miroir, apprendre à tomber et se relever grâce à un art martial ancestral, et faire preuve d'agilité lors d'un escape game entrepreneurial."
+      }
+    ],
+    "resultats": [
+      {
+        "stat": "600 €",
+        "label": "de reste à charge, sur un coût réel de 2 900 € par participante"
+      },
+      {
+        "stat": "8",
+        "label": "participantes maximum, pour une vraie dynamique de groupe"
+      },
+      {
+        "stat": "15",
+        "label": "rendez-vous collectifs sur le parcours (7 master-classes + 8 séances de codéveloppement)"
+      }
+    ],
+    "infos": [
+      {
+        "label": "Public",
+        "valeur": "Femmes qui entreprennent ou souhaitent entreprendre, déjà en activité ou en transition vers un projet entrepreneurial"
+      },
+      {
+        "label": "Dates",
+        "valeur": "Du 19 mars au 2 juillet 2026"
+      },
+      {
+        "label": "Format",
+        "valeur": "7 master-classes (vendredi 8h45-13h30) + 8 séances de codéveloppement (mardi 12h-15h), toutes les trois semaines, + mentorat individuel"
+      },
+      {
+        "label": "Groupe",
+        "valeur": "8 participantes maximum"
+      },
+      {
+        "label": "Lieu",
+        "valeur": "Andolsheim (68280) et chez nos partenaires alsaciens (Forge d'Eschbach-au-Val, Écurie de Widensolen)"
+      },
+      {
+        "label": "Tarif",
+        "valeur": "600 € de reste à charge (coût réel 2 900 € par participante, financé en grande partie par nos partenaires)"
+      },
+      {
+        "label": "Admission",
+        "valeur": "Dossier de candidature, sélection et entretien individuel"
+      },
+      {
+        "label": "Compatibilité",
+        "valeur": "Compatible avec une activité entrepreneuriale ou salariale en cours"
+      },
+      {
+        "label": "Certification",
+        "valeur": "Organisme de formation n° 44680322768, certifié Qualiopi (actions de formation)"
+      }
+    ],
+    "temoignage": {
+      "citation": "Je suis en train d'acquérir des outils pour me renforcer, m'ancrer, m'affirmer. J'apprends à m'organiser avec les réalités qui sont les miennes, familiales, financières, professionnelles. Les difficultés que j'ai vécues m'aident à faire partie de la solution et non du problème.",
+      "auteur": "Une participante de L'Campus"
+    },
+    "cta": {
+      "titre": "Prête à rejoindre la prochaine promotion ?",
+      "texte": "Écrivez-nous ou appelez-nous. On vous explique le parcours et on regarde ensemble si c'est le bon moment pour vous. Le dossier de candidature se retire auprès de l'équipe formation."
+    }
+  },
+  {
+    "slug": "sentrapprendre",
+    "metaTitle": "S'entrApprendre : devenir formateur-entrepreneur",
+    "metaDescription": "Parcours de 12 masterclasses (92h) pour structurer, vendre et professionnaliser votre activité de formateur. Cas réels, communauté de pairs, à Andolsheim.",
+    "heroColor": "bg-bleu-dark",
+    "heroImage": "/images/sentrapprendre-duo.jpg",
+    "hero": {
+      "eyebrow": "Formation · Formateurs-entrepreneurs · 12 masterclasses · DEFFINOV",
+      "titre": "S'entrApprendre, apprendre et entreprendre",
+      "accroche": "Vous avez l'expertise. On vous aide à en faire un vrai métier. Un parcours de 12 masterclasses qui couvre toutes les dimensions du métier de formateur-entrepreneur, de la conception de votre offre jusqu'à la gestion d'un groupe en salle.",
+      "faits": [
+        "12 masterclasses",
+        "92h de formation",
+        "8 participants par promotion",
+        "5 ans d'expérience minimum"
+      ]
+    },
+    "pourQui": [
+      {
+        "titre": "Formateurs indépendants ou futurs formateurs",
+        "desc": "Vous voulez lancer ou structurer votre activité de formation. Le parcours vous donne les méthodes et le cadre pour passer de l'envie au premier client."
+      },
+      {
+        "titre": "Consultants, coachs, entrepreneurs-salariés",
+        "desc": "Vous êtes en CAE, en portage ou en activité de conseil et vous voulez ajouter la formation à vos prestations. Ce parcours est pensé pour ça."
+      },
+      {
+        "titre": "Salariés formateurs internes, experts en devenir",
+        "desc": "Vous avez une expertise solide et l'envie de la transmettre. On vous accompagne de l'idée jusqu'au premier client."
+      },
+      {
+        "titre": "Vous cherchez un projet aligné",
+        "desc": "Réconcilier sens, talent et revenu, et bâtir une activité de formation qui vous ressemble vraiment, prospère et fidèle à vos valeurs."
+      }
+    ],
+    "programme": [
+      {
+        "titre": "Construire ma prestation",
+        "desc": "Partir de votre expertise pour concevoir une offre de formation structurée, cohérente et vendable."
+      },
+      {
+        "titre": "Trouver l'Ikigaï de mon entreprise",
+        "desc": "Réconcilier sens, talent et revenu, et identifier ce qui fait la singularité de votre positionnement."
+      },
+      {
+        "titre": "Modèle économique",
+        "desc": "Construire un modèle viable : tarification, charges, seuil de rentabilité. Du concret, pas de la théorie."
+      },
+      {
+        "titre": "Prospection commerciale",
+        "desc": "Réussir sa prospection et commercialiser sa prestation. Trouver ses premiers clients sans y passer ses nuits."
+      },
+      {
+        "titre": "Financements et alliances",
+        "desc": "Accéder aux dispositifs de financement (OPCO, CPF, etc.) et construire des partenariats stratégiques."
+      },
+      {
+        "titre": "L'IA en formation",
+        "desc": "Faire de l'intelligence artificielle un allié concret dans la conception et l'animation de vos formations."
+      },
+      {
+        "titre": "Gamification",
+        "desc": "Dynamiser vos interventions par le jeu. Des participants actifs plutôt que des spectateurs."
+      },
+      {
+        "titre": "Démarche Qualité",
+        "desc": "Introduire la démarche Qualité dans votre activité et réussir vos certifications, dont Qualiopi."
+      },
+      {
+        "titre": "Communication et visibilité",
+        "desc": "Communiquer efficacement sur votre offre et gagner en visibilité sans budget publicitaire démesuré."
+      },
+      {
+        "titre": "Prise de parole en public",
+        "desc": "Renforcer votre présence scénique : captiver un groupe, gérer le trac, poser votre voix."
+      },
+      {
+        "titre": "Gérer les comportements difficiles",
+        "desc": "Prévenir les conflits en formation et savoir réagir face aux situations tendues dans un groupe."
+      },
+      {
+        "titre": "Supervision entre pairs",
+        "desc": "Acquérir des méthodes de supervision pour continuer à progresser après la formation, en collectif."
+      }
+    ],
+    "resultats": [],
+    "infos": [
+      {
+        "label": "Durée",
+        "valeur": "12 masterclasses, soit 92 heures de formation"
+      },
+      {
+        "label": "Public",
+        "valeur": "Formateurs, consultants, coachs, entrepreneurs-salariés, experts en devenir"
+      },
+      {
+        "label": "Prérequis",
+        "valeur": "5 ans d'expérience professionnelle minimum, aucun diplôme spécifique requis"
+      },
+      {
+        "label": "Taille du groupe",
+        "valeur": "8 participants par promotion"
+      },
+      {
+        "label": "Lieu",
+        "valeur": "4 Grand'rue, 68280 Andolsheim"
+      },
+      {
+        "label": "Prochaine session",
+        "valeur": "À partir du 16 octobre 2026"
+      },
+      {
+        "label": "Au-delà des masterclasses",
+        "valeur": "Sessions de co-développement, intersessions en binôme, accès à une communauté de pairs"
+      },
+      {
+        "label": "Tarif",
+        "valeur": "3 800 € (tarif lancement DEFFINOV, au lieu de 5 200 €)"
+      },
+      {
+        "label": "Financement",
+        "valeur": "Prise en charge possible par votre OPCO (CPF et autres dispositifs à vérifier auprès de votre organisme)"
+      },
+      {
+        "label": "Contact",
+        "valeur": "formation@collectiforducommun.org · 07 55 53 08 57"
+      }
+    ],
+    "temoignage": {
+      "citation": "Un lieu riche d'enseignements et de partage... je me ressource en allant à leur before week du lundi matin.",
+      "auteur": "Anne-Sophie Cheron, membre Or du commun (avis Google)"
+    },
+    "cta": {
+      "titre": "Prêt·e à en faire votre métier ?",
+      "texte": "La prochaine promotion démarre le 16 octobre 2026, avec 8 places par session. Écrivez-nous pour vérifier votre éligibilité et les modalités de financement."
+    }
+  },
+  {
+    "slug": "coup-de-pouce",
+    "metaTitle": "Coup de pouce - Aide CV, entretien | Or du commun",
+    "metaDescription": "Coup de pouce : un accompagnement court et personnalisé pour votre parcours pro. CV, lettre, préparation d'entretien, orientation. À Andolsheim, sur rendez-vous.",
+    "heroColor": "bg-orange",
+    "heroImage": "/images/formation-coaching.jpg",
+    "hero": {
+      "eyebrow": "Accompagnement · Parcours professionnel · Format court",
+      "titre": "Coup de pouce, un soutien au bon moment",
+      "accroche": "Un appui ponctuel et bienveillant quand vous en avez besoin. On regarde ensemble votre CV, on prépare un entretien, on fait le point sur une orientation ou des démarches. Sans détour et à votre rythme.",
+      "faits": [
+        "Format court",
+        "Toutes situations",
+        "Gratuit pour les adhérents",
+        "Présentiel ou distanciel"
+      ]
+    },
+    "pourQui": [
+      {
+        "titre": "Vous cherchez un emploi",
+        "desc": "Votre CV ou votre lettre de motivation a besoin d'un regard externe. Vous voulez mettre en valeur ce que vous avez vraiment à offrir, sans vous vendre à moitié."
+      },
+      {
+        "titre": "Vous avez un entretien qui approche",
+        "desc": "L'idée de passer devant un recruteur vous tend. On s'entraîne ensemble pour que vous arriviez serein le jour J."
+      },
+      {
+        "titre": "Vous hésitez sur votre orientation",
+        "desc": "Vous ne savez pas trop vers quoi aller, ni par quel bout commencer. On prend le temps de faire le point, calmement."
+      },
+      {
+        "titre": "Vous êtes perdu dans les démarches",
+        "desc": "Inscriptions, dossiers, formalités administratives : on regarde ensemble lesquelles enclencher et dans quel ordre."
+      },
+      {
+        "titre": "Vous voulez soigner votre présence en ligne",
+        "desc": "Un profil LinkedIn qui parle pour vous, ça change beaucoup. On le retravaille pour qu'il reflète votre parcours."
+      }
+    ],
+    "programme": [
+      {
+        "titre": "Documents de candidature",
+        "desc": "CV, lettre de motivation, profil LinkedIn. Un regard externe et bienveillant pour mettre en valeur ce que vous avez à offrir."
+      },
+      {
+        "titre": "Préparation d'entretien",
+        "desc": "Simulation d'entretien, conseils de posture, travail sur les questions délicates. De quoi arriver serein le jour J."
+      },
+      {
+        "titre": "Orientation et démarches",
+        "desc": "Vous ne savez pas vers quoi vous orienter, ou quelles démarches enclencher ? On fait le point ensemble, sans pression."
+      }
+    ],
+    "resultats": [],
+    "infos": [
+      {
+        "label": "Public",
+        "valeur": "Toute personne en parcours professionnel"
+      },
+      {
+        "label": "Durée",
+        "valeur": "1 à 3 séances selon le besoin"
+      },
+      {
+        "label": "Lieu",
+        "valeur": "Or du commun, Andolsheim. En présentiel ou à distance"
+      },
+      {
+        "label": "Tarif",
+        "valeur": "Gratuit pour les adhérents, sur devis sinon"
+      },
+      {
+        "label": "Disponibilité",
+        "valeur": "Sur rendez-vous"
+      },
+      {
+        "label": "Format",
+        "valeur": "Entretien individuel, approche bienveillante"
+      }
+    ],
+    "temoignage": {
+      "citation": "",
+      "auteur": ""
+    },
+    "cta": {
+      "titre": "Besoin d'un coup de main ?",
+      "texte": "Un mail suffit pour organiser un rendez-vous. Pas de démarche compliquée, on convient ensemble d'un moment et on s'y met."
+    }
+  },
+  {
+    "slug": "ateliers-adherents",
+    "metaTitle": "Ateliers en Or - Ateliers adhérents | Or du commun",
+    "metaDescription": "Les Ateliers en Or du Collectif Or du commun à Andolsheim : sessions courtes et pratiques proposées par et pour les adhérents. Partagez votre expertise, progressez.",
+    "heroColor": "bg-bleu",
+    "heroImage": "",
+    "hero": {
+      "eyebrow": "Adhérents · Entraide métier · Andolsheim",
+      "titre": "Ateliers en Or",
+      "accroche": "Des sessions courtes et concrètes, proposées par et pour les membres du Collectif. On partage ce qu'on sait faire, on apprend des autres, et on repart avec du directement applicable.",
+      "faits": [
+        "Réservé aux adhérents",
+        "Format court : 1h30 à 3h",
+        "Inclus dans l'adhésion ou tarif préférentiel"
+      ]
+    },
+    "pourQui": [
+      {
+        "titre": "Vous voulez transmettre votre métier",
+        "desc": "Vous maîtrisez un sujet (compta, droit, com, numérique, marketing) et vous aimeriez le partager sans monter une formation complète. Un atelier court, c'est le bon format pour commencer."
+      },
+      {
+        "titre": "Vous débutez comme formateur",
+        "desc": "Animer un atelier devant des pairs bienveillants, c'est le terrain idéal pour gagner en aisance et roder sa posture de formateur, à petite échelle."
+      },
+      {
+        "titre": "Vous cherchez à vous faire connaître",
+        "desc": "En animant, vous montrez votre expertise à des professionnels qui peuvent devenir clients ou prescripteurs. La dynamique du collectif joue pour vous."
+      },
+      {
+        "titre": "Vous voulez juste apprendre concrètement",
+        "desc": "Pas envie d'un long cursus ? Venez piocher au fil des mois les sujets qui vous servent maintenant, posez vos questions, et repartez avec des réponses utiles."
+      }
+    ],
+    "programme": [
+      {
+        "titre": "Des thèmes variés, proposés par la communauté",
+        "desc": "Numérique, communication, bien-être au travail, droit, comptabilité, marketing. Les sujets viennent des adhérents eux-mêmes, donc ils collent aux vrais besoins du moment."
+      },
+      {
+        "titre": "Un format participatif, pas un cours magistral",
+        "desc": "On ne s'assoit pas pour écouter. Chacun contribue, pose ses questions, partage son expérience. L'atelier vit grâce aux personnes présentes."
+      },
+      {
+        "titre": "Court et directement applicable",
+        "desc": "Entre 1h30 et 3h, le temps d'aller à l'essentiel sur un sujet précis et de repartir avec quelque chose à mettre en pratique tout de suite."
+      },
+      {
+        "titre": "Partager son expertise et progresser comme formateur",
+        "desc": "Pour celles et ceux qui animent, c'est l'occasion de transmettre son métier, de gagner en aisance pédagogique et de se faire connaître auprès de potentiels clients."
+      },
+      {
+        "titre": "De nouveaux sujets chaque mois",
+        "desc": "Le programme se renouvelle au rythme des propositions des membres. Il y a toujours un nouvel atelier à découvrir."
+      }
+    ],
+    "resultats": [],
+    "infos": [
+      {
+        "label": "Public",
+        "valeur": "Réservé aux membres du Collectif Or du commun"
+      },
+      {
+        "label": "Durée d'un atelier",
+        "valeur": "1h30 à 3h"
+      },
+      {
+        "label": "Format",
+        "valeur": "Atelier participatif, proposé par et pour la communauté"
+      },
+      {
+        "label": "Rythme",
+        "valeur": "Nouveaux sujets proposés chaque mois"
+      },
+      {
+        "label": "Tarif",
+        "valeur": "Inclus dans l'adhésion Or du commun, ou à tarif préférentiel"
+      },
+      {
+        "label": "Lieu",
+        "valeur": "4 Grand'Rue, 68280 Andolsheim (Haut-Rhin)"
+      },
+      {
+        "label": "Horaires du lieu",
+        "valeur": "Lundi au vendredi, 8h00 à 18h00"
+      }
+    ],
+    "temoignage": {
+      "citation": "Espace de coworking et de formation, d'échange et d'écoute de bonnes pratiques.",
+      "auteur": "Sylvie Colin, adhérente Or du commun (avis Google)"
+    },
+    "cta": {
+      "titre": "Rejoignez la communauté",
+      "texte": "L'adhésion à Or du commun vous ouvre l'accès aux Ateliers en Or, au coworking et à toute la communauté de professionnels alsaciens. Contactez-nous pour devenir membre."
+    }
+  }
+]
